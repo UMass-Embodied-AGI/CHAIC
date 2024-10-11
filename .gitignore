@@ -26,7 +26,6 @@ share/python-wheels/
 *.egg-info/
 .installed.cfg
 *.egg
-*.mp4
 dataset_bk/
 dataset_old/
 detection_pipeline/*.pth
@@ -140,8 +139,6 @@ setup_gym.py
 *.pyc
 config.ini
 
-*.jpg
-*.png
 output/
 Images/
 tdw_build/
@@ -174,9 +171,6 @@ captured_imgs_*
 tdw_helper_perception_dataset*
 map.txt
 path.txt
-video.py
-video.mp4
-video*.mp4
 scenes/outdoor_scene/asset_bundles
 local_asset/
 local_asset.zip
