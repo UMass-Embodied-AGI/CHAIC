@@ -1,0 +1,193 @@
+[
+    {
+        "$type": "add_scene",
+        "name": "suburb_scene_2023",
+        "url": "https://tdw-public.s3.amazonaws.com/scenes/linux/2020.3/suburb_scene_2023"
+    },
+    {
+        "$type": "set_screen_size",
+        "width": 1024,
+        "height": 1024
+    },
+    {
+        "$type": "create_avatar",
+        "type": "A_Img_Caps_Kinematic",
+        "id": "teaser"
+    },
+    {
+        "$type": "set_pass_masks",
+        "pass_masks": [
+            "_img"
+        ],
+        "avatar_id": "teaser"
+    },
+    {
+        "$type": "set_render_order",
+        "render_order": 100,
+        "avatar_id": "teaser"
+    },
+    {
+        "$type": "teleport_avatar_to",
+        "position": {
+            "x": -3,
+            "y": 8,
+            "z": -3
+        },
+        "avatar_id": "teaser"
+    },
+    {
+        "$type": "look_at_position",
+        "position": {
+            "x": 15,
+            "y": -8,
+            "z": 10
+        },
+        "avatar_id": "teaser"
+    },
+    {
+        "$type": "send_log_messages"
+    },
+    {
+        "$type": "set_field_of_view",
+        "avatar_id": "teaser",
+        "field_of_view": 80
+    },
+    {
+        "$type": "set_pass_masks",
+        "pass_masks": [
+            "_img"
+        ],
+        "avatar_id": "teaser"
+    },
+    {
+        "$type": "add_object",
+        "name": "arflex_strips_sofa",
+        "url": "file://local_asset/Linux/arflex_strips_sofa",
+        "scale_factor": 1.0,
+        "position": {
+            "x": 0.75,
+            "y": 0.32,
+            "z": 4.5
+        },
+        "rotation": {
+            "x": 0.0,
+            "y": 169.2365483688183,
+            "z": 0.0
+        },
+        "category": "sofa",
+        "id": 4700691,
+        "affordance_points": [
+            {
+                "x": 0.9370051026344299,
+                "y": 0.07313238084316254,
+                "z": 0.4126150608062744
+            },
+            {
+                "x": 0.453233003616333,
+                "y": 0.04105604812502861,
+                "z": 0.42319756746292114
+            },
+            {
+                "x": -0.015440071932971478,
+                "y": 0.04687774181365967,
+                "z": 0.4422065317630768
+            },
+            {
+                "x": -0.4452623128890991,
+                "y": 0.04458479583263397,
+                "z": 0.4471431374549866
+            },
+            {
+                "x": -0.892410397529602,
+                "y": 0.023064659908413887,
+                "z": 0.42946168780326843
+            },
+            {
+                "x": -0.9437981843948364,
+                "y": 0.06300400197505951,
+                "z": -0.005850679706782103
+            },
+            {
+                "x": -0.9228745102882385,
+                "y": 0.03638043999671936,
+                "z": -0.4053207337856293
+            },
+            {
+                "x": -0.3837718069553375,
+                "y": 0.043139275163412094,
+                "z": -0.4535982012748718
+            },
+            {
+                "x": 0.05840394273400307,
+                "y": 0.05567719414830208,
+                "z": -0.46682772040367126
+            },
+            {
+                "x": 0.473705917596817,
+                "y": 0.04617876186966896,
+                "z": -0.45752161741256714
+            },
+            {
+                "x": 0.8644441366195679,
+                "y": 0.013808668591082096,
+                "z": -0.43812793493270874
+            },
+            {
+                "x": 0.934544026851654,
+                "y": 0.04404109716415405,
+                "z": 0.0019221872789785266
+            }
+        ]
+    },
+    {
+        "$type": "set_mass",
+        "id": 4700691,
+        "mass": 900
+    },
+    {
+        "$type": "scale_object",
+        "id": 4700691,
+        "scale_factor": {
+            "x": 0.7,
+            "y": 0.7,
+            "z": 0.7
+        }
+    },
+    {
+        "$type": "add_object",
+        "name": "b06_dump",
+        "url": "file://local_asset/Linux/b06_dump",
+        "scale_factor": 0.5,
+        "position": {
+            "x": 14.0,
+            "y": 0.0,
+            "z": 0.0
+        },
+        "rotation": {
+            "x": 0.0,
+            "y": 90.0,
+            "z": 0.0
+        },
+        "category": "truck",
+        "id": 4868458,
+        "affordance_points": []
+    },
+    {
+        "$type": "set_kinematic_state",
+        "id": 4868458,
+        "is_kinematic": true
+    },
+    {
+        "$type": "scale_object",
+        "id": 4868458,
+        "scale_factor": {
+            "x": 0.9,
+            "y": 0.5,
+            "z": 1.0
+        }
+    },
+    {
+        "$type": "step_physics",
+        "frames": 50
+    }
+]

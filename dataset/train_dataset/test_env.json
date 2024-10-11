@@ -1,0 +1,14 @@
+[
+    {"scene": "1a", "layout": "0_0", "seed": 2824}, 
+    {"scene": "1a", "layout": "1_0", "seed": 2824}, 
+    {"scene": "1a", "layout": "2_0", "seed": 2824},
+    {"scene": "4a", "layout": "0_0", "seed": 2824}, 
+    {"scene": "4a", "layout": "1_0", "seed": 2824}, 
+    {"scene": "4a", "layout": "2_0", "seed": 2824},
+    {"scene": "1b", "layout": "0_0", "seed": 2824}, 
+    {"scene": "1b", "layout": "1_0", "seed": 2824}, 
+    {"scene": "1b", "layout": "2_0", "seed": 2824},
+    {"scene": "4b", "layout": "0_0", "seed": 2824}, 
+    {"scene": "4b", "layout": "1_0", "seed": 2824}, 
+    {"scene": "4b", "layout": "2_0", "seed": 2824}
+]

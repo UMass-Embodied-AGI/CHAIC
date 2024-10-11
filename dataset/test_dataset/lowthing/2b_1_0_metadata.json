@@ -1,0 +1,241 @@
+{
+    "floorplan_scene_name": "2b",
+    "floorplan_layout": 1,
+    "scene_id": 0,
+    "object_room_list": [
+        [
+            "pencil_all",
+            "Bedroom"
+        ],
+        [
+            "teatray",
+            "Livingroom"
+        ],
+        [
+            "f10_apple_iphone_4",
+            "Livingroom"
+        ],
+        [
+            "b04_bowl_smooth",
+            "Livingroom"
+        ],
+        [
+            "b05_calculator",
+            "Bedroom"
+        ],
+        [
+            "f10_apple_iphone_4",
+            "Office"
+        ],
+        [
+            "b05_executive_pen",
+            "Livingroom"
+        ],
+        [
+            "key_brass",
+            "Bedroom"
+        ],
+        [
+            "apple_ipod_touch_yellow_vray",
+            "Office"
+        ],
+        [
+            "basket_18inx18inx12iin_plastic_lattice",
+            "Livingroom"
+        ],
+        [
+            "bread",
+            "Livingroom"
+        ],
+        [
+            "b04_orange_00",
+            "Livingroom"
+        ],
+        [
+            "basket_18inx18inx12iin_wicker",
+            "Office"
+        ],
+        [
+            "small_purse",
+            "Livingroom"
+        ],
+        [
+            "b03_loafbread",
+            "Bedroom"
+        ],
+        [
+            "bread",
+            "Livingroom"
+        ],
+        [
+            "mouse_02_vray",
+            "Livingroom"
+        ],
+        [
+            "b03_burger",
+            "Livingroom"
+        ],
+        [
+            "basket_18inx18inx12iin_wood_mesh",
+            "Livingroom"
+        ],
+        [
+            "apple_ipod_touch_yellow_vray",
+            "Livingroom"
+        ],
+        [
+            "plate06",
+            "Livingroom"
+        ],
+        [
+            "plate06",
+            "Livingroom"
+        ],
+        [
+            "apple",
+            "Porch"
+        ],
+        [
+            "key_brass",
+            "Kitchen"
+        ],
+        [
+            "b03_loafbread",
+            "Porch"
+        ],
+        [
+            "b05_executive_pen",
+            "Kitchen"
+        ],
+        [
+            "apple",
+            "Livingroom"
+        ],
+        [
+            "pencil_all",
+            "Livingroom"
+        ],
+        [
+            "b04_orange_00",
+            "Kitchen"
+        ],
+        [
+            "b05_calculator",
+            "Kitchen"
+        ],
+        [
+            "small_purse",
+            "Livingroom"
+        ],
+        [
+            "b03_loafbread",
+            "Livingroom"
+        ],
+        [
+            "mouse_02_vray",
+            "Livingroom"
+        ],
+        [
+            "b03_burger",
+            "Kitchen"
+        ],
+        [
+            "b04_banana",
+            "Livingroom"
+        ],
+        [
+            "b04_banana",
+            "Livingroom"
+        ],
+        [
+            "b04_banana",
+            "Bedroom"
+        ]
+    ],
+    "task": {
+        "goal_position_names": [
+            "bed"
+        ],
+        "goal_task": [
+            [
+                "b03_burger",
+                2
+            ],
+            [
+                "apple",
+                1
+            ],
+            [
+                "bread",
+                2
+            ],
+            [
+                "b03_loafbread",
+                3
+            ]
+        ],
+        "container_names": [
+            "b04_bowl_smooth",
+            "plate06",
+            "teatray",
+            "basket_18inx18inx12iin_plastic_lattice",
+            "basket_18inx18inx12iin_wicker",
+            "basket_18inx18inx12iin_wood_mesh"
+        ],
+        "task_kind": "lowthing",
+        "constraint_type": "low"
+    },
+    "object_height": [
+        0.57,
+        0.7,
+        0.48,
+        0.52,
+        0.44,
+        0.61,
+        0.48,
+        0.58,
+        0.73,
+        0.03,
+        0.58,
+        0.45,
+        0.58,
+        0.51,
+        0.46,
+        -0.0,
+        -0.0,
+        0.0,
+        -0.0,
+        -0.0,
+        0.0,
+        -0.0,
+        -0.0,
+        0.0,
+        -0.0,
+        0.0,
+        -0.0,
+        -0.0,
+        -0.0,
+        -0.0,
+        0.0
+    ],
+    "container_height": [
+        0.84,
+        0.52,
+        0.0,
+        0.9,
+        0.59,
+        0.58
+    ],
+    "agent": {
+        "0": {
+            "x": 5.746356010437012,
+            "y": 0,
+            "z": -1.4254207611083984
+        },
+        "1": {
+            "x": 5.746356010437012,
+            "y": 0,
+            "z": 2.5745792388916016
+        }
+    }
+}

@@ -1,0 +1,63 @@
+{
+    "agent": {
+        "0": [
+            4.5,
+            0.1,
+            -1.0
+        ],
+        "1": [
+            -0.5,
+            0.1,
+            1.0
+        ]
+    },
+    "avatar": {
+        "id": "teaser",
+        "position": {
+            "x": -3,
+            "y": 8,
+            "z": -3
+        },
+        "look_at": {
+            "x": 15,
+            "y": -8,
+            "z": 10
+        }
+    },
+    "mass_map": {
+        "4686902": 200,
+        "14549591": 900,
+        "3012504": 500,
+        "2110874": 400,
+        "15299757": 200
+    },
+    "scene_id": 6,
+    "agent_weight_constraint": {
+        "0": 100,
+        "1": 600
+    },
+    "task": {
+        "goal_position_names": "truck",
+        "goal_task": [
+            [
+                "arflex_strips_sofa",
+                1
+            ],
+            [
+                "dishwasher_4",
+                1
+            ],
+            [
+                "4ft_wood_shelving",
+                2
+            ],
+            [
+                "cabinet_24_door_drawer_wood_beach_honey",
+                1
+            ]
+        ],
+        "container_names": [],
+        "task_kind": "outdoor_furniture",
+        "constraint_type": "weight"
+    }
+}

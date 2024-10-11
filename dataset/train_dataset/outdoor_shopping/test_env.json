@@ -1,0 +1,446 @@
+[
+    {
+        "scene": "2a",
+        "layout": "0_0",
+        "seed": 621956,
+        "task": {
+            "goal_position_names": "fire hydrant",
+            "goal_task": [
+                [
+                    "apple",
+                    3
+                ],
+                [
+                    "b04_orange_00",
+                    3
+                ],
+                [
+                    "b04_red_grapes",
+                    3
+                ],
+                [
+                    "b03_banan_001",
+                    3
+                ],
+                [
+                    "b03_loafbread",
+                    1
+                ]
+            ],
+            "container_names": [
+                "basket_18inx18inx12iin_wicker",
+                "basket_18inx18inx12iin_bamboo",
+                "basket_18inx18inx12iin_wood_mesh"
+            ],
+            "task_kind": "outdoor_shopping",
+            "constraint_type": "riding"
+        }
+    },
+    {
+        "scene": "2a",
+        "layout": "0_1",
+        "seed": 3462608,
+        "task": {
+            "goal_position_names": "fire hydrant",
+            "goal_task": [
+                [
+                    "b03_loafbread",
+                    3
+                ],
+                [
+                    "b01_croissant",
+                    3
+                ],
+                [
+                    "b03_burger",
+                    2
+                ],
+                [
+                    "b03_pink_donuts_mesh",
+                    2
+                ],
+                [
+                    "b04_red_grapes",
+                    1
+                ]
+            ],
+            "container_names": [
+                "basket_18inx18inx12iin_wood_mesh",
+                "basket_18inx18inx12iin_wicker",
+                "basket_18inx18inx12iin_bamboo"
+            ],
+            "task_kind": "outdoor_shopping",
+            "constraint_type": "riding"
+        }
+    },
+    {
+        "scene": "2a",
+        "layout": "0_2",
+        "seed": 16555,
+        "task": {
+            "goal_position_names": "fire hydrant",
+            "goal_task": [
+                [
+                    "102_pepsi_can_12_fl_oz_vray",
+                    2
+                ],
+                [
+                    "b03_cocacola_can_cage",
+                    3
+                ],
+                [
+                    "104_sprite_can_12_fl_oz_vray",
+                    3
+                ],
+                [
+                    "fanta_orange_can_12_fl_oz_vray",
+                    3
+                ],
+                [
+                    "b03_burger",
+                    1
+                ]
+            ],
+            "container_names": [
+                "basket_18inx18inx12iin_plastic_lattice",
+                "basket_18inx18inx12iin_bamboo",
+                "basket_18inx18inx12iin_wicker"
+            ],
+            "task_kind": "outdoor_shopping",
+            "constraint_type": "riding"
+        }
+    },
+    {
+        "scene": "2a",
+        "layout": "0_3",
+        "seed": 2140463,
+        "task": {
+            "goal_position_names": "fire hydrant",
+            "goal_task": [
+                [
+                    "apple",
+                    3
+                ],
+                [
+                    "b04_orange_00",
+                    3
+                ],
+                [
+                    "b04_red_grapes",
+                    3
+                ],
+                [
+                    "b03_banan_001",
+                    3
+                ],
+                [
+                    "b03_burger",
+                    1
+                ]
+            ],
+            "container_names": [
+                "basket_18inx18inx12iin_bamboo",
+                "basket_18inx18inx12iin_plastic_lattice",
+                "basket_18inx18inx12iin_wood_mesh"
+            ],
+            "task_kind": "outdoor_shopping",
+            "constraint_type": "riding"
+        }
+    },
+    {
+        "scene": "2a",
+        "layout": "0_4",
+        "seed": 4354529,
+        "task": {
+            "goal_position_names": "fire hydrant",
+            "goal_task": [
+                [
+                    "b03_loafbread",
+                    3
+                ],
+                [
+                    "b01_croissant",
+                    3
+                ],
+                [
+                    "b03_burger",
+                    2
+                ],
+                [
+                    "b03_pink_donuts_mesh",
+                    2
+                ],
+                [
+                    "fanta_orange_can_12_fl_oz_vray",
+                    1
+                ]
+            ],
+            "container_names": [
+                "basket_18inx18inx12iin_wood_mesh",
+                "basket_18inx18inx12iin_plastic_lattice",
+                "basket_18inx18inx12iin_wicker"
+            ],
+            "task_kind": "outdoor_shopping",
+            "constraint_type": "riding"
+        }
+    },
+    {
+        "scene": "2a",
+        "layout": "0_5",
+        "seed": 4698040,
+        "task": {
+            "goal_position_names": "fire hydrant",
+            "goal_task": [
+                [
+                    "102_pepsi_can_12_fl_oz_vray",
+                    2
+                ],
+                [
+                    "b03_cocacola_can_cage",
+                    3
+                ],
+                [
+                    "104_sprite_can_12_fl_oz_vray",
+                    3
+                ],
+                [
+                    "fanta_orange_can_12_fl_oz_vray",
+                    3
+                ],
+                [
+                    "b03_burger",
+                    1
+                ]
+            ],
+            "container_names": [
+                "basket_18inx18inx12iin_wicker",
+                "basket_18inx18inx12iin_wood_mesh",
+                "basket_18inx18inx12iin_plastic_lattice"
+            ],
+            "task_kind": "outdoor_shopping",
+            "constraint_type": "riding"
+        }
+    },
+    {
+        "scene": "2a",
+        "layout": "0_6",
+        "seed": 121647,
+        "task": {
+            "goal_position_names": "fire hydrant",
+            "goal_task": [
+                [
+                    "apple",
+                    3
+                ],
+                [
+                    "b04_orange_00",
+                    3
+                ],
+                [
+                    "b04_red_grapes",
+                    3
+                ],
+                [
+                    "b03_banan_001",
+                    3
+                ],
+                [
+                    "102_pepsi_can_12_fl_oz_vray",
+                    1
+                ]
+            ],
+            "container_names": [
+                "basket_18inx18inx12iin_bamboo",
+                "basket_18inx18inx12iin_wood_mesh",
+                "basket_18inx18inx12iin_wicker"
+            ],
+            "task_kind": "outdoor_shopping",
+            "constraint_type": "riding"
+        }
+    },
+    {
+        "scene": "2a",
+        "layout": "0_7",
+        "seed": 5220875,
+        "task": {
+            "goal_position_names": "fire hydrant",
+            "goal_task": [
+                [
+                    "b03_loafbread",
+                    3
+                ],
+                [
+                    "b01_croissant",
+                    3
+                ],
+                [
+                    "b03_burger",
+                    2
+                ],
+                [
+                    "b03_pink_donuts_mesh",
+                    2
+                ],
+                [
+                    "102_pepsi_can_12_fl_oz_vray",
+                    1
+                ]
+            ],
+            "container_names": [
+                "basket_18inx18inx12iin_bamboo",
+                "basket_18inx18inx12iin_wood_mesh",
+                "basket_18inx18inx12iin_plastic_lattice"
+            ],
+            "task_kind": "outdoor_shopping",
+            "constraint_type": "riding"
+        }
+    },
+    {
+        "scene": "2a",
+        "layout": "0_8",
+        "seed": 5624870,
+        "task": {
+            "goal_position_names": "fire hydrant",
+            "goal_task": [
+                [
+                    "102_pepsi_can_12_fl_oz_vray",
+                    2
+                ],
+                [
+                    "b03_cocacola_can_cage",
+                    3
+                ],
+                [
+                    "104_sprite_can_12_fl_oz_vray",
+                    3
+                ],
+                [
+                    "fanta_orange_can_12_fl_oz_vray",
+                    3
+                ],
+                [
+                    "b03_banan_001",
+                    1
+                ]
+            ],
+            "container_names": [
+                "basket_18inx18inx12iin_wicker",
+                "basket_18inx18inx12iin_wood_mesh",
+                "basket_18inx18inx12iin_plastic_lattice"
+            ],
+            "task_kind": "outdoor_shopping",
+            "constraint_type": "riding"
+        }
+    },
+    {
+        "scene": "2a",
+        "layout": "0_9",
+        "seed": 3665926,
+        "task": {
+            "goal_position_names": "fire hydrant",
+            "goal_task": [
+                [
+                    "apple",
+                    3
+                ],
+                [
+                    "b04_orange_00",
+                    3
+                ],
+                [
+                    "b04_red_grapes",
+                    3
+                ],
+                [
+                    "b03_banan_001",
+                    3
+                ],
+                [
+                    "104_sprite_can_12_fl_oz_vray",
+                    1
+                ]
+            ],
+            "container_names": [
+                "basket_18inx18inx12iin_wicker",
+                "basket_18inx18inx12iin_wood_mesh",
+                "basket_18inx18inx12iin_plastic_lattice"
+            ],
+            "task_kind": "outdoor_shopping",
+            "constraint_type": "riding"
+        }
+    },
+    {
+        "scene": "2a",
+        "layout": "0_10",
+        "seed": 2927921,
+        "task": {
+            "goal_position_names": "fire hydrant",
+            "goal_task": [
+                [
+                    "b03_loafbread",
+                    3
+                ],
+                [
+                    "b01_croissant",
+                    3
+                ],
+                [
+                    "b03_burger",
+                    2
+                ],
+                [
+                    "b03_pink_donuts_mesh",
+                    2
+                ],
+                [
+                    "b03_banan_001",
+                    1
+                ]
+            ],
+            "container_names": [
+                "basket_18inx18inx12iin_plastic_lattice",
+                "basket_18inx18inx12iin_wicker",
+                "basket_18inx18inx12iin_wood_mesh"
+            ],
+            "task_kind": "outdoor_shopping",
+            "constraint_type": "riding"
+        }
+    },
+    {
+        "scene": "2a",
+        "layout": "0_11",
+        "seed": 3811134,
+        "task": {
+            "goal_position_names": "fire hydrant",
+            "goal_task": [
+                [
+                    "102_pepsi_can_12_fl_oz_vray",
+                    2
+                ],
+                [
+                    "b03_cocacola_can_cage",
+                    3
+                ],
+                [
+                    "104_sprite_can_12_fl_oz_vray",
+                    3
+                ],
+                [
+                    "fanta_orange_can_12_fl_oz_vray",
+                    3
+                ],
+                [
+                    "b04_red_grapes",
+                    1
+                ]
+            ],
+            "container_names": [
+                "basket_18inx18inx12iin_plastic_lattice",
+                "basket_18inx18inx12iin_wicker",
+                "basket_18inx18inx12iin_bamboo"
+            ],
+            "task_kind": "outdoor_shopping",
+            "constraint_type": "riding"
+        }
+    }
+]

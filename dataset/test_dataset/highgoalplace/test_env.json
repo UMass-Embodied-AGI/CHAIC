@@ -1,0 +1,486 @@
+[
+    {
+        "scene": "2a",
+        "layout": "0_0",
+        "seed": 2824,
+        "task": {
+            "goal_position_names": [
+                "cabinet"
+            ],
+            "goal_task": [
+                [
+                    "apple",
+                    1
+                ],
+                [
+                    "pencil_all",
+                    2
+                ],
+                [
+                    "b05_executive_pen",
+                    2
+                ],
+                [
+                    "mouse_02_vray",
+                    2
+                ],
+                [
+                    "b05_calculator",
+                    2
+                ]
+            ],
+            "container_names": [
+                "b04_bowl_smooth",
+                "plate06",
+                "teatray",
+                "basket_18inx18inx12iin_plastic_lattice",
+                "basket_18inx18inx12iin_wicker",
+                "basket_18inx18inx12iin_wood_mesh"
+            ],
+            "task_kind": "highgoalplace",
+            "constraint_type": "high"
+        }
+    },
+    {
+        "scene": "2a",
+        "layout": "1_0",
+        "seed": 2824,
+        "task": {
+            "goal_position_names": [
+                "cabinet"
+            ],
+            "goal_task": [
+                [
+                    "pencil_all",
+                    2
+                ],
+                [
+                    "apple",
+                    1
+                ],
+                [
+                    "b05_calculator",
+                    2
+                ],
+                [
+                    "b05_executive_pen",
+                    2
+                ],
+                [
+                    "mouse_02_vray",
+                    2
+                ]
+            ],
+            "container_names": [
+                "b04_bowl_smooth",
+                "plate06",
+                "teatray",
+                "basket_18inx18inx12iin_plastic_lattice",
+                "basket_18inx18inx12iin_wicker",
+                "basket_18inx18inx12iin_wood_mesh"
+            ],
+            "task_kind": "highgoalplace",
+            "constraint_type": "high"
+        }
+    },
+    {
+        "scene": "2a",
+        "layout": "2_0",
+        "seed": 2824,
+        "task": {
+            "goal_position_names": [
+                "cabinet"
+            ],
+            "goal_task": [
+                [
+                    "mouse_02_vray",
+                    1
+                ],
+                [
+                    "key_brass",
+                    2
+                ],
+                [
+                    "apple_ipod_touch_yellow_vray",
+                    2
+                ],
+                [
+                    "small_purse",
+                    2
+                ],
+                [
+                    "f10_apple_iphone_4",
+                    3
+                ]
+            ],
+            "container_names": [
+                "b04_bowl_smooth",
+                "plate06",
+                "teatray",
+                "basket_18inx18inx12iin_plastic_lattice",
+                "basket_18inx18inx12iin_wicker",
+                "basket_18inx18inx12iin_wood_mesh"
+            ],
+            "task_kind": "highgoalplace",
+            "constraint_type": "high"
+        }
+    },
+    {
+        "scene": "5a",
+        "layout": "0_0",
+        "seed": 2824,
+        "task": {
+            "goal_position_names": [
+                "cabinet"
+            ],
+            "goal_task": [
+                [
+                    "small_purse",
+                    2
+                ],
+                [
+                    "apple_ipod_touch_yellow_vray",
+                    2
+                ],
+                [
+                    "key_brass",
+                    2
+                ],
+                [
+                    "b05_calculator",
+                    1
+                ],
+                [
+                    "f10_apple_iphone_4",
+                    3
+                ]
+            ],
+            "container_names": [
+                "b04_bowl_smooth",
+                "plate06",
+                "teatray",
+                "basket_18inx18inx12iin_plastic_lattice",
+                "basket_18inx18inx12iin_wicker",
+                "basket_18inx18inx12iin_wood_mesh"
+            ],
+            "task_kind": "highgoalplace",
+            "constraint_type": "high"
+        }
+    },
+    {
+        "scene": "5a",
+        "layout": "1_0",
+        "seed": 2824,
+        "task": {
+            "goal_position_names": [
+                "cabinet"
+            ],
+            "goal_task": [
+                [
+                    "mouse_02_vray",
+                    2
+                ],
+                [
+                    "f10_apple_iphone_4",
+                    1
+                ],
+                [
+                    "pencil_all",
+                    2
+                ],
+                [
+                    "b05_executive_pen",
+                    2
+                ],
+                [
+                    "b05_calculator",
+                    2
+                ]
+            ],
+            "container_names": [
+                "b04_bowl_smooth",
+                "plate06",
+                "teatray",
+                "basket_18inx18inx12iin_plastic_lattice",
+                "basket_18inx18inx12iin_wicker",
+                "basket_18inx18inx12iin_wood_mesh"
+            ],
+            "task_kind": "highgoalplace",
+            "constraint_type": "high"
+        }
+    },
+    {
+        "scene": "5a",
+        "layout": "2_0",
+        "seed": 2824,
+        "task": {
+            "goal_position_names": [
+                "cabinet"
+            ],
+            "goal_task": [
+                [
+                    "b05_calculator",
+                    1
+                ],
+                [
+                    "b03_burger",
+                    2
+                ],
+                [
+                    "bread",
+                    3
+                ],
+                [
+                    "b03_loafbread",
+                    2
+                ]
+            ],
+            "container_names": [
+                "b04_bowl_smooth",
+                "plate06",
+                "teatray",
+                "basket_18inx18inx12iin_plastic_lattice",
+                "basket_18inx18inx12iin_wicker",
+                "basket_18inx18inx12iin_wood_mesh"
+            ],
+            "task_kind": "highgoalplace",
+            "constraint_type": "high"
+        }
+    },
+    {
+        "scene": "2b",
+        "layout": "0_0",
+        "seed": 2824,
+        "task": {
+            "goal_position_names": [
+                "cabinet"
+            ],
+            "goal_task": [
+                [
+                    "b03_burger",
+                    2
+                ],
+                [
+                    "bread",
+                    2
+                ],
+                [
+                    "b04_orange_00",
+                    1
+                ],
+                [
+                    "b03_loafbread",
+                    3
+                ]
+            ],
+            "container_names": [
+                "b04_bowl_smooth",
+                "plate06",
+                "teatray",
+                "basket_18inx18inx12iin_plastic_lattice",
+                "basket_18inx18inx12iin_wicker",
+                "basket_18inx18inx12iin_wood_mesh"
+            ],
+            "task_kind": "highgoalplace",
+            "constraint_type": "high"
+        }
+    },
+    {
+        "scene": "2b",
+        "layout": "1_0",
+        "seed": 2824,
+        "task": {
+            "goal_position_names": [
+                "cabinet"
+            ],
+            "goal_task": [
+                [
+                    "bread",
+                    2
+                ],
+                [
+                    "b03_burger",
+                    2
+                ],
+                [
+                    "pencil_all",
+                    1
+                ],
+                [
+                    "b03_loafbread",
+                    3
+                ]
+            ],
+            "container_names": [
+                "b04_bowl_smooth",
+                "plate06",
+                "teatray",
+                "basket_18inx18inx12iin_plastic_lattice",
+                "basket_18inx18inx12iin_wicker",
+                "basket_18inx18inx12iin_wood_mesh"
+            ],
+            "task_kind": "highgoalplace",
+            "constraint_type": "high"
+        }
+    },
+    {
+        "scene": "2b",
+        "layout": "2_0",
+        "seed": 2824,
+        "task": {
+            "goal_position_names": [
+                "cabinet"
+            ],
+            "goal_task": [
+                [
+                    "b03_burger",
+                    2
+                ],
+                [
+                    "b04_banana",
+                    1
+                ],
+                [
+                    "b03_loafbread",
+                    3
+                ],
+                [
+                    "bread",
+                    2
+                ]
+            ],
+            "container_names": [
+                "b04_bowl_smooth",
+                "plate06",
+                "teatray",
+                "basket_18inx18inx12iin_plastic_lattice",
+                "basket_18inx18inx12iin_wicker",
+                "basket_18inx18inx12iin_wood_mesh"
+            ],
+            "task_kind": "highgoalplace",
+            "constraint_type": "high"
+        }
+    },
+    {
+        "scene": "5c",
+        "layout": "0_0",
+        "seed": 2824,
+        "task": {
+            "goal_position_names": [
+                "cabinet"
+            ],
+            "goal_task": [
+                [
+                    "apple",
+                    3
+                ],
+                [
+                    "key_brass",
+                    1
+                ],
+                [
+                    "b04_orange_00",
+                    2
+                ],
+                [
+                    "b04_banana",
+                    2
+                ]
+            ],
+            "container_names": [
+                "b04_bowl_smooth",
+                "plate06",
+                "teatray",
+                "basket_18inx18inx12iin_plastic_lattice",
+                "basket_18inx18inx12iin_wicker",
+                "basket_18inx18inx12iin_wood_mesh"
+            ],
+            "task_kind": "highgoalplace",
+            "constraint_type": "high"
+        }
+    },
+    {
+        "scene": "5c",
+        "layout": "1_0",
+        "seed": 2824,
+        "task": {
+            "goal_position_names": [
+                "refrigerator"
+            ],
+            "goal_task": [
+                [
+                    "key_brass",
+                    2
+                ],
+                [
+                    "b05_calculator",
+                    1
+                ],
+                [
+                    "apple_ipod_touch_yellow_vray",
+                    1
+                ],
+                [
+                    "small_purse",
+                    2
+                ],
+                [
+                    "f10_apple_iphone_4",
+                    4
+                ]
+            ],
+            "container_names": [
+                "b04_bowl_smooth",
+                "plate06",
+                "teatray",
+                "basket_18inx18inx12iin_plastic_lattice",
+                "basket_18inx18inx12iin_wicker",
+                "basket_18inx18inx12iin_wood_mesh"
+            ],
+            "task_kind": "highgoalplace",
+            "constraint_type": "high"
+        }
+    },
+    {
+        "scene": "5c",
+        "layout": "2_0",
+        "seed": 2824,
+        "task": {
+            "goal_position_names": [
+                "cabinet"
+            ],
+            "goal_task": [
+                [
+                    "key_brass",
+                    1
+                ],
+                [
+                    "pencil_all",
+                    1
+                ],
+                [
+                    "apple_ipod_touch_yellow_vray",
+                    2
+                ],
+                [
+                    "f10_apple_iphone_4",
+                    4
+                ],
+                [
+                    "small_purse",
+                    2
+                ]
+            ],
+            "container_names": [
+                "b04_bowl_smooth",
+                "plate06",
+                "teatray",
+                "basket_18inx18inx12iin_plastic_lattice",
+                "basket_18inx18inx12iin_wicker",
+                "basket_18inx18inx12iin_wood_mesh"
+            ],
+            "task_kind": "highgoalplace",
+            "constraint_type": "high"
+        }
+    }
+]

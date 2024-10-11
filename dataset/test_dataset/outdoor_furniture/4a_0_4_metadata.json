@@ -1,0 +1,59 @@
+{
+    "agent": {
+        "0": [
+            1.0,
+            0.1,
+            2.75
+        ],
+        "1": [
+            1.0,
+            0.1,
+            0.75
+        ]
+    },
+    "avatar": {
+        "id": "teaser",
+        "position": {
+            "x": -3,
+            "y": 8,
+            "z": -3
+        },
+        "look_at": {
+            "x": 15,
+            "y": -8,
+            "z": 10
+        }
+    },
+    "mass_map": {
+        "4429527": 500,
+        "6355659": 120,
+        "9838678": 120,
+        "4177608": 50,
+        "11519895": 50
+    },
+    "scene_id": 4,
+    "agent_weight_constraint": {
+        "0": 100,
+        "1": 600
+    },
+    "task": {
+        "goal_position_names": "truck",
+        "goal_task": [
+            [
+                "emeco_navy_chair",
+                2
+            ],
+            [
+                "b04_backpack",
+                2
+            ],
+            [
+                "cabinet_24_door_drawer_wood_beach_honey",
+                1
+            ]
+        ],
+        "container_names": [],
+        "task_kind": "outdoor_furniture",
+        "constraint_type": "weight"
+    }
+}

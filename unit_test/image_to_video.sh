@@ -1,0 +1,1 @@
+ffmpeg -framerate 15 -i demo_$1/images_a/img_%04d.jpg -c:v libx264 -r 30 -pix_fmt yuv420p $1.mp4

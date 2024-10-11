@@ -1,0 +1,67 @@
+{
+    "agent": {
+        "0": [
+            4.25,
+            0.1,
+            2.5
+        ],
+        "1": [
+            2.0,
+            0.1,
+            2.5
+        ]
+    },
+    "avatar": {
+        "id": "teaser",
+        "position": {
+            "x": -3,
+            "y": 8,
+            "z": -3
+        },
+        "look_at": {
+            "x": 15,
+            "y": -8,
+            "z": 10
+        }
+    },
+    "mass_map": {
+        "9204556": 900,
+        "14029288": 200,
+        "1431169": 400,
+        "15301842": 400,
+        "12463766": 120
+    },
+    "scene_id": 3,
+    "agent_weight_constraint": {
+        "0": 100,
+        "1": 600
+    },
+    "task": {
+        "goal_position_names": "truck",
+        "goal_task": [
+            [
+                "arflex_strips_sofa",
+                1
+            ],
+            [
+                "emeco_navy_chair",
+                1
+            ],
+            [
+                "4ft_wood_shelving",
+                1
+            ],
+            [
+                "appliance-ge-profile-microwave3",
+                1
+            ],
+            [
+                "dishwasher_4",
+                1
+            ]
+        ],
+        "container_names": [],
+        "task_kind": "outdoor_furniture",
+        "constraint_type": "weight"
+    }
+}

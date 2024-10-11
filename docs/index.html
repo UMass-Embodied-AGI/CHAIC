@@ -1,0 +1,765 @@
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+
+<script type="text/javascript" charset="utf-8" src="https://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js"></script> 
+<!---
+<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+--->
+
+
+<style type="text/css">
+body {
+    font-family: "Titillium Web", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+    font-weight: 300;
+    font-size: 20px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@media screen and (min-width: 980px){
+    body {
+        width: 980px;
+    }
+}
+
+
+h1 {
+    font-weight:300;
+    line-height: 1.15em;
+}
+
+h2 {
+    font-size: 1.75em;
+}
+a:link,a:visited {
+    color: #5364cc;
+    text-decoration: none;
+}
+a:hover {
+    color: #208799;
+}
+h1 {
+    text-align: center;
+}
+h2,h3 {
+    text-align: left;
+}
+
+h1 {
+    font-size: 40px;
+    font-weight: 500;
+}
+h2 {
+    font-weight: 400;
+    margin: 16px 0px 4px 0px;
+}
+h3 {
+    font-weight: 600;
+    margin: 16px 0px 4px 0px;
+}
+
+.paper-title {
+    padding: 1px 0px 1px 0px;
+}
+section {
+    margin: 32px 0px 32px 0px;
+    text-align: justify;
+    clear: both;
+}
+.col-5 {
+     width: 20%;
+     float: left;
+}
+
+.move-down {
+    margin-top:1.2cm;
+}
+
+.col-4 {
+     width: 25%;
+     float: left;
+}
+.col-3 {
+     width: 33%;
+     float: left;
+}
+.col-2 {
+     width: 50%;
+     float: left;
+}
+.col-1 {
+     width: 100%;
+     float: left;
+}
+
+.author-row, .affil-row {
+    font-size: 17px;
+}
+
+.author-row-new { 
+    text-align: center; 
+}
+
+.author-row-new a {
+    display: inline-block;
+    font-size: 17px;
+    padding: 4px;
+}
+
+.author-row-new sup {
+    color: #313436;
+    font-size: 13   px;
+    padding: 4px;
+}
+
+.affiliations-new {
+    font-size: 16px;
+    text-align: center;
+    width: 80%;
+    margin: 0 auto;
+    margin-bottom: 20px;
+}
+
+.row {
+    margin: 16px 0px 16px 0px;
+}
+.authors {
+    font-size: 26px;
+}
+.affiliatons {
+    font-size: 18px;
+}
+.affil-row {
+    margin-top: 18px;
+}
+.teaser {
+    max-width: 100%;
+}
+.text-center {
+    text-align: center;  
+}
+.screenshot {
+    width: 256px;
+    border: 1px solid #ddd;
+}
+.screenshot-el {
+    margin-bottom: 16px;
+}
+hr {
+    height: 1px;
+    border: 0; 
+    border-top: 1px solid #ddd;
+    margin: 0;
+}
+.material-icons {
+    vertical-align: -6px;
+}
+p {
+    line-height: 1.25em;
+}
+.caption {
+    font-size: 16px;
+    color: #666;
+    margin-top: 4px;
+    margin-bottom: 10px;
+	text-align: left;
+}
+
+
+video {
+    display: block;
+    margin: auto;
+}
+
+
+figure {
+    display: block;
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+#bibtex pre {
+    font-size: 14px;
+    background-color: #eee;
+    padding: 16px;
+}
+.blue {
+    color: #2c82c9;
+    font-weight: bold;
+}
+.orange {
+    color: #d35400;
+    font-weight: bold;
+}
+.flex-row {
+    display: flex;
+    flex-flow: row wrap;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+.flex-row-center {
+    display: flex;
+    flex-flow: row wrap;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    justify-content: center;
+    text-align: center;
+}
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.flex-item {
+  flex: 0 0 50%;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+.paper-btn-coming-soon {
+    position: relative; 
+    top: 0;
+    left: 0;
+}
+
+.coming-soon {
+    position: absolute;
+    top: -15px;
+    right: -15px;
+}
+
+.center {
+  margin-left: 10.0%;
+  margin-right: 10.0%;
+}
+
+.paper-btn {
+  position: relative;
+  text-align: center;
+
+  display: inline-block;
+  margin: 8px;
+  padding: 8px 8px;
+
+  border-width: 0;
+  outline: none;
+  border-radius: 2px;
+  
+  background-color: #E0F7FA;
+  color: #01579B !important;
+  font-size: 20px;
+  width: 200px;
+  font-weight: 600;
+}
+
+.paper-btn-tapestry {
+  position: relative;
+  text-align: center;
+
+  display: inline-block;
+  margin: 8px;
+  padding: 8px 8px;
+
+  border-width: 0;
+  outline: none;
+  border-radius: 2px;
+  
+  background-color: #5364cc;
+  color: white !important;
+  font-size: 20px;
+  width: 200px;
+  font-weight: 600;
+}
+
+.paper-btn-parent {
+    display: flex;
+    justify-content: center;
+    margin: 16px 0px;
+}
+
+.paper-btn:hover {
+    opacity: 0.85;
+}
+
+.container {
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 16px;
+    padding-right: 16px;
+}
+
+.venue {
+    font-size: 23px;
+}
+
+.topnav {
+    background-color: #EEEEEE;
+    overflow: hidden;
+}
+
+.topnav div {
+    max-width: 1070px;
+    margin: 0 auto;
+}
+
+.topnav a {
+    display: inline-block;
+    color: black;
+    text-align: center;
+    vertical-align: middle;
+    padding: 16px 16px;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.topnav img {
+    padding: 2px 0px;
+    width: 100%;
+    margin: 0.2em 0px 0.3em 0px;
+    vertical-align: middle;
+}
+
+pre {
+    font-size: 0.9em;
+    padding-left: 7px;
+    padding-right: 7px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    border-radius: 3px;
+    background-color: rgb(235, 235, 235);
+    overflow-x: auto;
+}
+
+.download-thumb {
+    display: flex;
+}
+
+@media only screen and (max-width: 620px) {
+    .download-thumb {
+        display: none;
+    }
+}
+
+.paper-stuff {
+    width: 50%;
+    font-size: 20px;
+}
+
+@media only screen and (max-width: 620px) {
+    .paper-stuff {
+        width: 100%;
+    }
+}
+* {
+  box-sizing: border-box;
+}
+
+.column {
+  text-align: center;
+  float: left;
+  width: 16.666%;
+  padding: 5px;
+}
+.column3 {
+  text-align: center;
+  float: left;
+  width: 33.333%;
+  padding: 5px;
+}
+.column4 {
+  text-align: center;
+  float: left;
+  width: 50%;
+  padding: 5px;
+}
+.column5 {
+  text-align: center;
+  float: left;
+  width: 20%;
+  padding: 5px;
+}
+.column10 {
+  text-align: center;
+  float: left;
+  width: 10%;
+  padding: 5px;
+}
+.border-right {
+    border-right: 1px solid black;
+}
+.border-bottom{
+    border-bottom: 1px solid black;
+}
+
+
+.row-center {
+    margin: 16px 0px 16px 0px;
+    text-align: center;
+}
+
+/* Clearfix (clear floats) */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+.img-fluid {
+  max-width: 100%;
+  height: auto;
+}
+.figure-img {
+  margin-bottom: 0.5rem;
+  line-height: 1;
+}
+
+.rounded-circle {
+  border-radius: 50% !important;
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 500px) {
+  .column {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 500px) {
+  .column3 {
+    width: 100%;
+  }
+}
+
+.video-container {
+        display: flex;
+        justify-content: center;
+        align-items: flex-start; /* 确保视频和标题顶部对齐 */
+}
+.video-box-2 {
+        margin: 10px;
+        width: 45%;
+}
+.video-box-3 {
+        margin: 10px;
+        width: 30%;
+}
+video {
+        width: 100%;
+}
+.caption {
+        text-align: center; /* 将标题居中对齐 */
+        color: #333; /* 标题颜色 */
+}
+</style>
+
+<script type="text/javascript"></script>
+    <link href='https://fonts.googleapis.com/css?family=Titillium+Web:400,600,400italic,600italic,300,300italic' rel='stylesheet' type='text/css'>
+    <head>
+        <title> CHAIC </title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta property="og:description" content="An Inclusive Embodied Social Intelligence Challenge"/>
+        <link href="https://fonts.googleapis.com/css2?family=Material+Icons" rel="stylesheet">
+        <link rel="icon" href = "https://images.emojiterra.com/google/noto-emoji/unicode-15.1/color/svg/1f91d.svg">
+    </head>
+
+ <body>
+
+<div class="container">
+    <div class="paper-title">
+    <h1> 
+        Constrained Human-AI Cooperation:<br> An Inclusive Embodied Social Intelligence Challenge
+    </div>
+
+    <div id="authors">
+        <center>
+            <div class="author-row-new">
+                Anonymous
+            </div>
+        </center>
+        <center>
+        <!--div class="affiliations">
+        </div> -->
+
+        <!-- <div class="affil-row">
+            <div class="venue text-center"><b>NeurlIPS 2023 </b></div>
+        </div> -->
+
+        </center>
+
+        <div style="clear: both">
+            <div class="paper-btn-parent">
+            <a class="paper-btn" href="https://openreview.net/forum?id=2vs1fIAy3X">
+                <span class="material-icons"> description </span> 
+                 Paper
+            </a>
+            <a class="paper-btn" href="https://github.com/CHAIC-NeurIPS/CHAIC">
+                <span class="material-icons"> code </span>
+                Code
+            </a>
+            </div>
+        </div>
+    </div>
+
+    <section id="teaser-image">
+        <hr>
+        <center>
+            <!-- <figure>
+                <video class="centered" width="80%" autoplay loop muted playsinline class="video-background " >
+                    <source src="materials/teaser.m4v" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </figure> -->
+            <figure>
+                <a>
+                    <img width="95%" src="figure/teaser_v4.png"> 
+                </a>
+            </figure>
+        </center>
+    </section>
+
+    <section id="abstract"/>
+        <h2 style="text-align: center;">Abstract</h2>
+        <div class="flex-row" style="width: 75%; margin: 0 auto;">
+            <p>
+                We introduce the Constrained Human-AI Cooperation (CHAIC), an inclusive embodied social intelligence challenge for testing social perception and cooperation in embodied agents. In CHAIC, the goal is for an embodied agent equipped with egocentric observations to aid a human possibly operating under physical constraints, e.g. unable to reach high places or confined to a wheelchair, to perform common household or outdoor tasks as efficiently as possible. To do this, a successful helper must <b>(1) infer the human's intents and constraints</b> by following the human and observing their behaviors (social perception), and <b>(2) make a cooperative plan tailored to the human user</b> to solve the task as fast as possible together as a team (cooperative planning). To benchmark this challenge, we created <b>4 new agents</b> with real physical constraints, and <b>8 long-horizon tasks</b> featuring both indoor and outdoor scenes with various constraints and emergency events along with potential risks. We benchmark both planning and learning baselines on the challenge and introduce a new method leveraging Large Language Models and behavior modeling. Empirical evaluation demonstrates the ability of our benchmark to enable systematic evaluation of important elements of machine social intelligence.
+            </p>
+        </div>
+    </section>
+
+    <section id="Dataset Description">
+        <h2 style="text-align: center;">Dataset Description</h2>
+        <center>
+            <!-- <figure>
+                <video class="centered" width="80%" autoplay loop muted playsinline class="video-background " >
+                    <source src="materials/teaser.m4v" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </figure> -->
+            <figure>
+                <a>
+                    <img width="95%" src="figure/task_overview_v6.png"> 
+                </a>
+                <p class="caption", style="text-align: center;">
+                    Figure 1. Overview of CHAIC Benchmark.
+                </p>
+            </figure>
+        </center>
+    </section> 
+
+    <section id="Dataset Description"/>
+        <div class="flex-row">
+            <p>
+                The Constrained Human-AI Cooperation (CHAIC) Challenge seeks to study how embodied agents perform on the social perception of human users with diverse physical constraints. we design and implement four new agents with real physical constraints, and eight tasks featuring both indoor and outdoor scenes including emergency events.
+            </p>
+            <p>
+                For each task, there is a <b>constrained agent</b> mimicking a human user with capability constraints trying to find and transport some target objects to a specific goal position, and a <b>helper agent</b> trying to infer the constrained agent's goal and capability constraints through active perception of the constrained agent's behaviors.
+            </p>
+            <p>
+                The four kinds of agents new are named child agent, wheelchair agent, bicycle agent, and frail agent with specific constraints, and their example video clips are shown here: 
+            </p>
+        </div>
+    <hr>
+    </section>
+    <h3 style="text-align: center;">Wheelchair Agent</h3>
+    <p>
+        The wheelchair agent cannot go through obstacles, and the helper agent needs to remove the obstacles for the wheelchair agent to pass. Meanwhile, the wheelchair agent may fail to reach objects which is too low or too high.
+    </p>
+</div>
+<div class="video-container">
+    <div class="video-box-3">
+        <video controls>
+            <source src="video/wheelchair_obstacle.mp4" type="video/mp4">
+        </video>
+        <p class="caption", style="text-align: center;">
+        Wait for the helper to remove the obstacle.
+        </p>
+    </div>
+    <div class="video-box-3">
+        <video controls>
+            <source src="video/wheelchair_pick_up_fail.mp4" type="video/mp4">
+        </video>
+        <p class="caption", style="text-align: center;">
+        Fail in pick-up.
+        </p>
+    </div>
+    <div class="video-box-3">
+        <video controls>
+            <source src="video/wheelchair_pick_up_success.mp4" type="video/mp4">
+        </video>
+        <p class="caption", style="text-align: center;">
+        Succeed in pick-up.
+        </p>
+    </div>
+</div>
+<div class="container">
+    <hr>
+    <h3 style="text-align: center;">Child Agent</h3>
+    <p>
+        The child agent has a limited height and may fail to reach high places. Meanwhile, it may break fragile objects.
+    </p>
+</div>
+<div class="video-container">
+    <div class="video-box-3">
+        <video controls>
+            <source src="video/vase_girl_success.mp4" type="video/mp4">
+        </video>
+        <p class="caption", style="text-align: center;">
+        Succeed in pick-up.
+        </p>
+    </div>
+    <div class="video-box-3">
+        <video controls>
+            <source src="video/vase_girl_fail.mp4" type="video/mp4">
+        </video>
+        <p class="caption", style="text-align: center;">
+        Fail in pick-up.
+        </p>
+    </div>
+    <div class="video-box-3">
+        <video controls>
+            <source src="video/vase_girl.mp4" type="video/mp4">
+        </video>
+        <p class="caption", style="text-align: center;">
+        Break fragile objects.
+        </p>
+    </div>
+</div>
+<div class="container">
+    <hr>
+    <h3 style="text-align: center;">Bicycle Agent</h3>
+    <p>
+        The bicycle agent is slow to move and do actions. Sometimes its child agent may run away and the helper needs to catch it.
+    </p>
+</div>
+<div class="video-container">
+    <div class="video-box-3">
+        <video controls>
+            <source src="video/video_bicycle_walk_slow.mp4" type="video/mp4">
+        </video>
+        <p class="caption", style="text-align: center;">
+        The bicycle agent walks more slowly than the helper.
+        </p>
+    </div>
+    <div class="video-box-3">
+        <video controls>
+            <source src="video/video_shop_drop.mp4" type="video/mp4">
+        </video>
+        <p class="caption", style="text-align: center;">
+        The bicycle agent has the basket on the bicycle as a container.
+        </p>
+    </div>
+    <div class="video-box-3">
+        <video controls>
+            <source src="video/video_shop_runaway.mp4" type="video/mp4">
+        </video>
+        <p class="caption", style="text-align: center;">
+        The helper helps the bicycle agent to catch the child agent.
+        </p>
+    </div>
+</div>
+<div class="container">
+    <hr>
+    <h3 style="text-align: center;">Frail Agent</h3>
+    <p>
+        The frail agent may fail to pick up heavy objects, the heavier the object, the more likely it fails. The helper can pick up objects with the frail agent together.
+    </p>
+</div>
+<div class="video-container">
+    <div class="video-box-3">
+        <video controls>
+            <source src="video/video_pick_together.mp4" type="video/mp4">
+        </video>
+        <p class="caption", style="text-align: center;">
+        Two agents pick up together.
+        </p>
+    </div>
+    <div class="video-box-3">
+        <video controls>
+            <source src="video/video_lift_failed_woman.mp4" type="video/mp4">
+        </video>
+        <p class="caption", style="text-align: center;">
+        Fail in pick-up.
+        </p>
+    </div>
+    <div class="video-box-3">
+        <video controls>
+            <source src="video/video_liftup_success.mp4" type="video/mp4">
+        </video>
+        <p class="caption", style="text-align: center;">
+        Succeed in pick-up.
+        </p>
+    </div>
+</div>
+<div class="container">
+    <section id="Task Description">
+    <hr>
+        <h3 style="text-align: center;">Tasks</h3>
+        <div class="flex-row">
+            <p>
+                The eight kinds of tasks contain both indoor and outdoor scenes, and the tasks are: Normal, Highthing, Highgoalplace, Highcontainer, Lowthing, Obstacle, Shopping, and Furniture. Here is their brief description:
+            </p>
+        </div>
+        <center>
+            <!-- <figure>
+                <video class="centered" width="80%" autoplay loop muted playsinline class="video-background " >
+                    <source src="materials/teaser.m4v" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </figure> -->
+            <figure>
+                <a>
+                    <img width="95%" src="figure/task_description.png"> 
+                </a>
+                <p class="caption", style="text-align: center;">
+                    Table 1. Overview of Tasks.
+                </p>
+            </figure>
+        </center>
+    </section> 
+
+    <section id="Baseline">
+        <hr>
+        <h2 style="text-align: center;">LLM+BM Baseline</h2>
+        <center>
+            <!-- <figure>
+                <video class="centered" width="80%" autoplay loop muted playsinline class="video-background " >
+                    <source src="materials/teaser.m4v" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </figure> -->
+            <figure>
+                <a>
+                    <img width="95%" src="figure/model.png"> 
+                </a>
+                <p class="caption", style="text-align: center;">
+                    Figure 2. Our proposed baseline model.
+                </p>
+            </figure>
+        </center>
+    </section> 
+    
+    <section id="Baseline Overview"/>
+    <div class="flex-row">
+        <p>
+        We test six types of helpers: <b>Random Helper</b>, <b>Rule-based Hierarchical Plan Helper (RHP)</b>, <b>LLM+BM Helper</b>, <b>VLM Helper</b>, <b>RL Helper</b> and <b>SmartHelp Helper</b>. Figure 2 is an overview of our proposed LLM+BM helper agent, which achieves the best scores in our benchmark. The agent contains <b>perception module</b>, <b>memory module</b>, <b>behavior modeling module</b>, <b>decision module</b>, and <b>execuation module</b>. Combining the wide knowledge from foundation models and precise perception from fine-tuned models, the LLM+BM helper agent can infer the constrained agent's goal and constraints more accurately and efficiently. Here is an exmaple of the LLM+BM helper agent's behavior:
+        <center>
+            <!-- <figure>
+                <video class="centered" width="80%" autoplay loop muted playsinline class="video-background " >
+                    <source src="materials/teaser.m4v" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </figure> -->
+            <figure>
+                <a>
+                    <img width="95%" src="figure/LLM+BM_example.png"> 
+                </a>
+                <p class="caption", style="text-align: center;">
+                    Figure 2. LLM+BM helper agent's thought and behavior.
+                </p>
+            </figure>
+        </center>
+    </section>
+</div>
+</body>
+</html>

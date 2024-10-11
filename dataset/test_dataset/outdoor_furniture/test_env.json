@@ -1,0 +1,370 @@
+[
+    {
+        "scene": "4a",
+        "layout": "0_0",
+        "seed": 9819627,
+        "task": {
+            "goal_position_names": "truck",
+            "goal_task": [
+                [
+                    "appliance-ge-profile-microwave3",
+                    1
+                ],
+                [
+                    "arflex_strips_sofa",
+                    1
+                ],
+                [
+                    "dining_room_table",
+                    1
+                ],
+                [
+                    "emeco_navy_chair",
+                    2
+                ]
+            ],
+            "container_names": [],
+            "task_kind": "outdoor_furniture",
+            "constraint_type": "weight"
+        }
+    },
+    {
+        "scene": "4a",
+        "layout": "0_1",
+        "seed": 4478903,
+        "task": {
+            "goal_position_names": "truck",
+            "goal_task": [
+                [
+                    "4ft_wood_shelving",
+                    1
+                ],
+                [
+                    "b03_grandpiano2014",
+                    1
+                ],
+                [
+                    "b04_backpack",
+                    2
+                ],
+                [
+                    "cabinet_24_door_drawer_wood_beach_honey",
+                    1
+                ]
+            ],
+            "container_names": [],
+            "task_kind": "outdoor_furniture",
+            "constraint_type": "weight"
+        }
+    },
+    {
+        "scene": "4a",
+        "layout": "0_2",
+        "seed": 5002423,
+        "task": {
+            "goal_position_names": "truck",
+            "goal_task": [
+                [
+                    "dishwasher_4",
+                    1
+                ],
+                [
+                    "hp_printer",
+                    1
+                ],
+                [
+                    "kettle_2",
+                    2
+                ],
+                [
+                    "sm_tv",
+                    1
+                ]
+            ],
+            "container_names": [],
+            "task_kind": "outdoor_furniture",
+            "constraint_type": "weight"
+        }
+    },
+    {
+        "scene": "4a",
+        "layout": "0_3",
+        "seed": 110209,
+        "task": {
+            "goal_position_names": "truck",
+            "goal_task": [
+                [
+                    "arflex_strips_sofa",
+                    1
+                ],
+                [
+                    "emeco_navy_chair",
+                    1
+                ],
+                [
+                    "4ft_wood_shelving",
+                    1
+                ],
+                [
+                    "appliance-ge-profile-microwave3",
+                    1
+                ],
+                [
+                    "dishwasher_4",
+                    1
+                ]
+            ],
+            "container_names": [],
+            "task_kind": "outdoor_furniture",
+            "constraint_type": "weight"
+        }
+    },
+    {
+        "scene": "4a",
+        "layout": "0_4",
+        "seed": 869179,
+        "task": {
+            "goal_position_names": "truck",
+            "goal_task": [
+                [
+                    "emeco_navy_chair",
+                    2
+                ],
+                [
+                    "b04_backpack",
+                    2
+                ],
+                [
+                    "cabinet_24_door_drawer_wood_beach_honey",
+                    1
+                ]
+            ],
+            "container_names": [],
+            "task_kind": "outdoor_furniture",
+            "constraint_type": "weight"
+        }
+    },
+    {
+        "scene": "4a",
+        "layout": "0_5",
+        "seed": 7400780,
+        "task": {
+            "goal_position_names": "truck",
+            "goal_task": [
+                [
+                    "hp_printer",
+                    1
+                ],
+                [
+                    "dining_room_table",
+                    1
+                ],
+                [
+                    "sm_tv",
+                    1
+                ],
+                [
+                    "b03_grandpiano2014",
+                    1
+                ],
+                [
+                    "appliance-ge-profile-microwave3",
+                    1
+                ]
+            ],
+            "container_names": [],
+            "task_kind": "outdoor_furniture",
+            "constraint_type": "weight"
+        }
+    },
+    {
+        "scene": "4a",
+        "layout": "0_6",
+        "seed": 7710707,
+        "task": {
+            "goal_position_names": "truck",
+            "goal_task": [
+                [
+                    "arflex_strips_sofa",
+                    1
+                ],
+                [
+                    "dishwasher_4",
+                    1
+                ],
+                [
+                    "4ft_wood_shelving",
+                    2
+                ],
+                [
+                    "cabinet_24_door_drawer_wood_beach_honey",
+                    1
+                ]
+            ],
+            "container_names": [],
+            "task_kind": "outdoor_furniture",
+            "constraint_type": "weight"
+        }
+    },
+    {
+        "scene": "4a",
+        "layout": "0_7",
+        "seed": 1197382,
+        "task": {
+            "goal_position_names": "truck",
+            "goal_task": [
+                [
+                    "arflex_strips_sofa",
+                    1
+                ],
+                [
+                    "b03_grandpiano2014",
+                    1
+                ],
+                [
+                    "kettle_2",
+                    1
+                ],
+                [
+                    "sm_tv",
+                    1
+                ],
+                [
+                    "emeco_navy_chair",
+                    1
+                ]
+            ],
+            "container_names": [],
+            "task_kind": "outdoor_furniture",
+            "constraint_type": "weight"
+        }
+    },
+    {
+        "scene": "4a",
+        "layout": "0_8",
+        "seed": 8226904,
+        "task": {
+            "goal_position_names": "truck",
+            "goal_task": [
+                [
+                    "appliance-ge-profile-microwave3",
+                    1
+                ],
+                [
+                    "emeco_navy_chair",
+                    1
+                ],
+                [
+                    "sm_tv",
+                    1
+                ],
+                [
+                    "dining_room_table",
+                    1
+                ],
+                [
+                    "b04_backpack",
+                    1
+                ]
+            ],
+            "container_names": [],
+            "task_kind": "outdoor_furniture",
+            "constraint_type": "weight"
+        }
+    },
+    {
+        "scene": "4a",
+        "layout": "0_9",
+        "seed": 8480143,
+        "task": {
+            "goal_position_names": "truck",
+            "goal_task": [
+                [
+                    "b04_backpack",
+                    1
+                ],
+                [
+                    "hp_printer",
+                    1
+                ],
+                [
+                    "4ft_wood_shelving",
+                    1
+                ],
+                [
+                    "appliance-ge-profile-microwave3",
+                    1
+                ],
+                [
+                    "cabinet_24_door_drawer_wood_beach_honey",
+                    1
+                ]
+            ],
+            "container_names": [],
+            "task_kind": "outdoor_furniture",
+            "constraint_type": "weight"
+        }
+    },
+    {
+        "scene": "4a",
+        "layout": "0_10",
+        "seed": 9178600,
+        "task": {
+            "goal_position_names": "truck",
+            "goal_task": [
+                [
+                    "hp_printer",
+                    1
+                ],
+                [
+                    "kettle_2",
+                    2
+                ],
+                [
+                    "4ft_wood_shelving",
+                    1
+                ],
+                [
+                    "dishwasher_4",
+                    1
+                ]
+            ],
+            "container_names": [],
+            "task_kind": "outdoor_furniture",
+            "constraint_type": "weight"
+        }
+    },
+    {
+        "scene": "4a",
+        "layout": "0_11",
+        "seed": 3130178,
+        "task": {
+            "goal_position_names": "truck",
+            "goal_task": [
+                [
+                    "arflex_strips_sofa",
+                    1
+                ],
+                [
+                    "emeco_navy_chair",
+                    1
+                ],
+                [
+                    "b04_backpack",
+                    1
+                ],
+                [
+                    "dining_room_table",
+                    1
+                ],
+                [
+                    "cabinet_24_door_drawer_wood_beach_honey",
+                    1
+                ]
+            ],
+            "container_names": [],
+            "task_kind": "outdoor_furniture",
+            "constraint_type": "weight"
+        }
+    }
+]

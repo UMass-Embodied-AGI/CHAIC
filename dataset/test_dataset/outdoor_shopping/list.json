@@ -1,0 +1,17 @@
+{
+    "targets":
+    [
+        "apple",
+        "b04_orange_00",
+        "b04_red_grapes",
+        "b03_banan_001",
+        "b03_loafbread", 
+        "b01_croissant", 
+        "b03_burger", 
+        "b03_pink_donuts_mesh",
+        "102_pepsi_can_12_fl_oz_vray", 
+        "b03_cocacola_can_cage", 
+        "104_sprite_can_12_fl_oz_vray", 
+        "fanta_orange_can_12_fl_oz_vray"
+    ]
+}

@@ -1,0 +1,212 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# C extensions
+*.so
+
+# Distribution / packaging
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+results/
+pip-wheel-metadata/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+*.mp4
+dataset_bk/
+dataset_old/
+detection_pipeline/*.pth
+MANIFEST
+
+# PyInstaller
+#  Usually these files are written by a python script from a template
+#  before PyInstaller builds the exe, so as to inject date/other infos into it.
+*.manifest
+*.spec
+
+# Installer logs
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Unit test / coverage reports
+htmlcov/
+.tox/
+.nox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+*.py,cover
+.hypothesis/
+.pytest_cache/
+
+# Translations
+*.mo
+*.pot
+
+# Django stuff:
+*.log
+local_settings.py
+db.sqlite3
+db.sqlite3-journal
+
+# Flask stuff:
+instance/
+.webassets-cache
+
+# Scrapy stuff:
+.scrapy
+
+# Sphinx documentation
+docs/_build/
+
+# PyBuilder
+target/
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# IPython
+profile_default/
+ipython_config.py
+
+# pyenv
+.python-version
+
+# pipenv
+#   According to pypa/pipenv#598, it is recommended to include Pipfile.lock in version control.
+#   However, in case of collaboration, if having platform-specific dependencies or dependencies
+#   having no cross-platform support, pipenv may install dependencies that don't work, or not
+#   install all needed dependencies.
+#Pipfile.lock
+
+# PEP 582; used by e.g. github.com/David-OConnor/pyflow
+__pypackages__/
+
+# Celery stuff
+celerybeat-schedule
+celerybeat.pid
+
+# SageMath parsed files
+*.sage.py
+
+# Environments
+.env
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# Spyder project settings
+.spyderproject
+.spyproject
+
+# Rope project settings
+.ropeproject
+
+# mkdocs documentation
+/site
+
+# mypy
+.mypy_cache/
+.dmypy.json
+dmypy.json
+
+# Pyre type checker
+.pyre/
+
+.idea/
+tdw-transport-challenge-old/
+transport_challenge/
+setup_gym.py
+*.pyc
+config.ini
+
+*.jpg
+*.png
+output/
+Images/
+tdw_build/
+.config/
+top_down_image/
+*.conf
+transport_challenge_asset_bundles/
+TDW_Linux.tar.gz.1
+*.jepg
+
+outputs/
+scene_outputs/
+replay/
+replay_imgs/
+results/
+results*/
+utils/ffmpeg-6.0-amd64-static/
+other_result/
+backup/
+LLM/chat_raw.json
+action.pkl
+results.zip
+results*.zip
+original_code/
+loginvalid.txt
+logxyz.txt
+LLM/chat_raw_helper.json
+roomocc.txt
+captured_imgs_*
+tdw_helper_perception_dataset*
+map.txt
+path.txt
+video.py
+video.mp4
+video*.mp4
+scenes/outdoor_scene/asset_bundles
+local_asset/
+local_asset.zip
+debug.py
+file.txt
+check.py
+test_map.png
+
+smart_help_baseline/checkpoints
+smart_help_baseline/logs
+
+dataset/train_dataset/highcontainer/screenshots
+dataset/train_dataset/highgoalplace/screenshots
+dataset/train_dataset/highthing/screenshots
+dataset/train_dataset/lowthing/screenshots
+dataset/train_dataset/normal/screenshots
+dataset/train_dataset/wheelchair/screenshots
+
+dataset/test_dataset/highcontainer/screenshots
+dataset/test_dataset/highgoalplace/screenshots
+dataset/test_dataset/highthing/screenshots
+dataset/test_dataset/lowthing/screenshots
+dataset/test_dataset/normal/screenshots
+dataset/test_dataset/wheelchair/screenshots
+
+change_test_env.py
+rewrite_metadata.py
+detection_pipeline/epoch_4.pth
+smart_help_baseline/oppo_model.pth
+nohup.out
+behavior.txt
+
+**/~lost+found

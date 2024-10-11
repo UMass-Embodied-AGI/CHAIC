@@ -1,0 +1,2072 @@
+[
+    {
+        "$type": "add_scene",
+        "name": "suburb_scene_2023",
+        "url": "https://tdw-public.s3.amazonaws.com/scenes/linux/2020.3/suburb_scene_2023"
+    },
+    {
+        "$type": "set_screen_size",
+        "width": 1024,
+        "height": 1024
+    },
+    {
+        "$type": "create_avatar",
+        "type": "A_Img_Caps_Kinematic",
+        "id": "teaser"
+    },
+    {
+        "$type": "set_pass_masks",
+        "pass_masks": [
+            "_img"
+        ],
+        "avatar_id": "teaser"
+    },
+    {
+        "$type": "set_render_order",
+        "render_order": 105,
+        "avatar_id": "teaser"
+    },
+    {
+        "$type": "teleport_avatar_to",
+        "position": {
+            "x": 27,
+            "y": 5,
+            "z": 0.7
+        },
+        "avatar_id": "teaser"
+    },
+    {
+        "$type": "look_at_position",
+        "position": {
+            "x": 0,
+            "y": 0,
+            "z": 0.7
+        },
+        "avatar_id": "teaser"
+    },
+    {
+        "$type": "send_log_messages"
+    },
+    {
+        "$type": "set_field_of_view",
+        "avatar_id": "teaser",
+        "field_of_view": 80
+    },
+    {
+        "$type": "set_pass_masks",
+        "pass_masks": [
+            "_img"
+        ],
+        "avatar_id": "teaser"
+    },
+    {
+        "$type": "add_object",
+        "name": "b01_tent",
+        "url": "https://tdw-private.s3.amazonaws.com/models/linux/2018-2019.1/b01_tent",
+        "scale_factor": 1.0,
+        "position": {
+            "x": 10.0,
+            "y": 0.0,
+            "z": -2.5
+        },
+        "rotation": {
+            "x": 0.0,
+            "y": 90.0,
+            "z": 0.0
+        },
+        "category": "tent",
+        "id": 15751360,
+        "affordance_points": []
+    },
+    {
+        "$type": "set_kinematic_state",
+        "id": 15751360,
+        "is_kinematic": true
+    },
+    {
+        "$type": "scale_object",
+        "id": 15751360,
+        "scale_factor": {
+            "x": 0.4,
+            "y": 1.0,
+            "z": 0.8
+        }
+    },
+    {
+        "$type": "add_object",
+        "name": "4ft_wood_shelving",
+        "url": "file://local_asset/Linux/4ft_wood_shelving",
+        "scale_factor": 1,
+        "position": {
+            "x": 9.3,
+            "y": 0.0,
+            "z": -2.0
+        },
+        "rotation": {
+            "x": 0.0,
+            "y": 90.0,
+            "z": 0.0
+        },
+        "category": "shelf",
+        "id": 12907288,
+        "affordance_points": []
+    },
+    {
+        "$type": "set_kinematic_state",
+        "id": 12907288,
+        "is_kinematic": true
+    },
+    {
+        "$type": "scale_object",
+        "id": 12907288,
+        "scale_factor": {
+            "x": 1.0,
+            "y": 0.8,
+            "z": 1.2
+        }
+    },
+    {
+        "$type": "add_object",
+        "name": "4ft_wood_shelving",
+        "url": "file://local_asset/Linux/4ft_wood_shelving",
+        "scale_factor": 1,
+        "position": {
+            "x": 10.7,
+            "y": 0.0,
+            "z": -2.0
+        },
+        "rotation": {
+            "x": 0.0,
+            "y": 90.0,
+            "z": 0.0
+        },
+        "category": "shelf",
+        "id": 15947750,
+        "affordance_points": []
+    },
+    {
+        "$type": "set_kinematic_state",
+        "id": 15947750,
+        "is_kinematic": true
+    },
+    {
+        "$type": "scale_object",
+        "id": 15947750,
+        "scale_factor": {
+            "x": 1.0,
+            "y": 0.8,
+            "z": 1.2
+        }
+    },
+    {
+        "$type": "add_object",
+        "name": "b01_tent",
+        "url": "https://tdw-private.s3.amazonaws.com/models/linux/2018-2019.1/b01_tent",
+        "scale_factor": 1.0,
+        "position": {
+            "x": 10.0,
+            "y": 0.0,
+            "z": 4.0
+        },
+        "rotation": {
+            "x": 0.0,
+            "y": 90.0,
+            "z": 0.0
+        },
+        "category": "tent",
+        "id": 6917598,
+        "affordance_points": []
+    },
+    {
+        "$type": "set_kinematic_state",
+        "id": 6917598,
+        "is_kinematic": true
+    },
+    {
+        "$type": "scale_object",
+        "id": 6917598,
+        "scale_factor": {
+            "x": 0.4,
+            "y": 1.0,
+            "z": 0.8
+        }
+    },
+    {
+        "$type": "add_object",
+        "name": "4ft_wood_shelving",
+        "url": "file://local_asset/Linux/4ft_wood_shelving",
+        "scale_factor": 1,
+        "position": {
+            "x": 9.3,
+            "y": 0.0,
+            "z": 3.5
+        },
+        "rotation": {
+            "x": 0.0,
+            "y": 90.0,
+            "z": 0.0
+        },
+        "category": "shelf",
+        "id": 445573,
+        "affordance_points": []
+    },
+    {
+        "$type": "set_kinematic_state",
+        "id": 445573,
+        "is_kinematic": true
+    },
+    {
+        "$type": "scale_object",
+        "id": 445573,
+        "scale_factor": {
+            "x": 1.0,
+            "y": 0.8,
+            "z": 1.2
+        }
+    },
+    {
+        "$type": "add_object",
+        "name": "4ft_wood_shelving",
+        "url": "file://local_asset/Linux/4ft_wood_shelving",
+        "scale_factor": 1,
+        "position": {
+            "x": 10.7,
+            "y": 0.0,
+            "z": 3.5
+        },
+        "rotation": {
+            "x": 0.0,
+            "y": 90.0,
+            "z": 0.0
+        },
+        "category": "shelf",
+        "id": 1101542,
+        "affordance_points": []
+    },
+    {
+        "$type": "set_kinematic_state",
+        "id": 1101542,
+        "is_kinematic": true
+    },
+    {
+        "$type": "scale_object",
+        "id": 1101542,
+        "scale_factor": {
+            "x": 1.0,
+            "y": 0.8,
+            "z": 1.2
+        }
+    },
+    {
+        "$type": "add_object",
+        "name": "b01_tent",
+        "url": "https://tdw-private.s3.amazonaws.com/models/linux/2018-2019.1/b01_tent",
+        "scale_factor": 1.0,
+        "position": {
+            "x": 15.0,
+            "y": 0.0,
+            "z": -2.5
+        },
+        "rotation": {
+            "x": 0.0,
+            "y": 90.0,
+            "z": 0.0
+        },
+        "category": "tent",
+        "id": 2202463,
+        "affordance_points": []
+    },
+    {
+        "$type": "set_kinematic_state",
+        "id": 2202463,
+        "is_kinematic": true
+    },
+    {
+        "$type": "scale_object",
+        "id": 2202463,
+        "scale_factor": {
+            "x": 0.4,
+            "y": 1.0,
+            "z": 0.8
+        }
+    },
+    {
+        "$type": "add_object",
+        "name": "4ft_wood_shelving",
+        "url": "file://local_asset/Linux/4ft_wood_shelving",
+        "scale_factor": 1,
+        "position": {
+            "x": 14.3,
+            "y": 0.0,
+            "z": -2.0
+        },
+        "rotation": {
+            "x": 0.0,
+            "y": 90.0,
+            "z": 0.0
+        },
+        "category": "shelf",
+        "id": 4490500,
+        "affordance_points": []
+    },
+    {
+        "$type": "set_kinematic_state",
+        "id": 4490500,
+        "is_kinematic": true
+    },
+    {
+        "$type": "scale_object",
+        "id": 4490500,
+        "scale_factor": {
+            "x": 1.0,
+            "y": 0.8,
+            "z": 1.2
+        }
+    },
+    {
+        "$type": "add_object",
+        "name": "4ft_wood_shelving",
+        "url": "file://local_asset/Linux/4ft_wood_shelving",
+        "scale_factor": 1,
+        "position": {
+            "x": 15.7,
+            "y": 0.0,
+            "z": -2.0
+        },
+        "rotation": {
+            "x": 0.0,
+            "y": 90.0,
+            "z": 0.0
+        },
+        "category": "shelf",
+        "id": 5902781,
+        "affordance_points": []
+    },
+    {
+        "$type": "set_kinematic_state",
+        "id": 5902781,
+        "is_kinematic": true
+    },
+    {
+        "$type": "scale_object",
+        "id": 5902781,
+        "scale_factor": {
+            "x": 1.0,
+            "y": 0.8,
+            "z": 1.2
+        }
+    },
+    {
+        "$type": "add_object",
+        "name": "b01_tent",
+        "url": "https://tdw-private.s3.amazonaws.com/models/linux/2018-2019.1/b01_tent",
+        "scale_factor": 1.0,
+        "position": {
+            "x": 15.0,
+            "y": 0.0,
+            "z": 4.0
+        },
+        "rotation": {
+            "x": 0.0,
+            "y": 90.0,
+            "z": 0.0
+        },
+        "category": "tent",
+        "id": 5403464,
+        "affordance_points": []
+    },
+    {
+        "$type": "set_kinematic_state",
+        "id": 5403464,
+        "is_kinematic": true
+    },
+    {
+        "$type": "scale_object",
+        "id": 5403464,
+        "scale_factor": {
+            "x": 0.4,
+            "y": 1.0,
+            "z": 0.8
+        }
+    },
+    {
+        "$type": "add_object",
+        "name": "4ft_wood_shelving",
+        "url": "file://local_asset/Linux/4ft_wood_shelving",
+        "scale_factor": 1,
+        "position": {
+            "x": 14.3,
+            "y": 0.0,
+            "z": 3.5
+        },
+        "rotation": {
+            "x": 0.0,
+            "y": 90.0,
+            "z": 0.0
+        },
+        "category": "shelf",
+        "id": 14003807,
+        "affordance_points": []
+    },
+    {
+        "$type": "set_kinematic_state",
+        "id": 14003807,
+        "is_kinematic": true
+    },
+    {
+        "$type": "scale_object",
+        "id": 14003807,
+        "scale_factor": {
+            "x": 1.0,
+            "y": 0.8,
+            "z": 1.2
+        }
+    },
+    {
+        "$type": "add_object",
+        "name": "4ft_wood_shelving",
+        "url": "file://local_asset/Linux/4ft_wood_shelving",
+        "scale_factor": 1,
+        "position": {
+            "x": 15.7,
+            "y": 0.0,
+            "z": 3.5
+        },
+        "rotation": {
+            "x": 0.0,
+            "y": 90.0,
+            "z": 0.0
+        },
+        "category": "shelf",
+        "id": 14583893,
+        "affordance_points": []
+    },
+    {
+        "$type": "set_kinematic_state",
+        "id": 14583893,
+        "is_kinematic": true
+    },
+    {
+        "$type": "scale_object",
+        "id": 14583893,
+        "scale_factor": {
+            "x": 1.0,
+            "y": 0.8,
+            "z": 1.2
+        }
+    },
+    {
+        "$type": "add_object",
+        "name": "b01_tent",
+        "url": "https://tdw-private.s3.amazonaws.com/models/linux/2018-2019.1/b01_tent",
+        "scale_factor": 1.0,
+        "position": {
+            "x": 20.0,
+            "y": 0.0,
+            "z": -2.5
+        },
+        "rotation": {
+            "x": 0.0,
+            "y": 90.0,
+            "z": 0.0
+        },
+        "category": "tent",
+        "id": 2076169,
+        "affordance_points": []
+    },
+    {
+        "$type": "set_kinematic_state",
+        "id": 2076169,
+        "is_kinematic": true
+    },
+    {
+        "$type": "scale_object",
+        "id": 2076169,
+        "scale_factor": {
+            "x": 0.4,
+            "y": 1.0,
+            "z": 0.8
+        }
+    },
+    {
+        "$type": "add_object",
+        "name": "4ft_wood_shelving",
+        "url": "file://local_asset/Linux/4ft_wood_shelving",
+        "scale_factor": 1,
+        "position": {
+            "x": 19.3,
+            "y": 0.0,
+            "z": -2.0
+        },
+        "rotation": {
+            "x": 0.0,
+            "y": 90.0,
+            "z": 0.0
+        },
+        "category": "shelf",
+        "id": 3228676,
+        "affordance_points": []
+    },
+    {
+        "$type": "set_kinematic_state",
+        "id": 3228676,
+        "is_kinematic": true
+    },
+    {
+        "$type": "scale_object",
+        "id": 3228676,
+        "scale_factor": {
+            "x": 1.0,
+            "y": 0.8,
+            "z": 1.2
+        }
+    },
+    {
+        "$type": "add_object",
+        "name": "4ft_wood_shelving",
+        "url": "file://local_asset/Linux/4ft_wood_shelving",
+        "scale_factor": 1,
+        "position": {
+            "x": 20.7,
+            "y": 0.0,
+            "z": -2.0
+        },
+        "rotation": {
+            "x": 0.0,
+            "y": 90.0,
+            "z": 0.0
+        },
+        "category": "shelf",
+        "id": 1498195,
+        "affordance_points": []
+    },
+    {
+        "$type": "set_kinematic_state",
+        "id": 1498195,
+        "is_kinematic": true
+    },
+    {
+        "$type": "scale_object",
+        "id": 1498195,
+        "scale_factor": {
+            "x": 1.0,
+            "y": 0.8,
+            "z": 1.2
+        }
+    },
+    {
+        "$type": "add_object",
+        "name": "b01_tent",
+        "url": "https://tdw-private.s3.amazonaws.com/models/linux/2018-2019.1/b01_tent",
+        "scale_factor": 1.0,
+        "position": {
+            "x": 20.0,
+            "y": 0.0,
+            "z": 4.0
+        },
+        "rotation": {
+            "x": 0.0,
+            "y": 90.0,
+            "z": 0.0
+        },
+        "category": "tent",
+        "id": 11605363,
+        "affordance_points": []
+    },
+    {
+        "$type": "set_kinematic_state",
+        "id": 11605363,
+        "is_kinematic": true
+    },
+    {
+        "$type": "scale_object",
+        "id": 11605363,
+        "scale_factor": {
+            "x": 0.4,
+            "y": 1.0,
+            "z": 0.8
+        }
+    },
+    {
+        "$type": "add_object",
+        "name": "4ft_wood_shelving",
+        "url": "file://local_asset/Linux/4ft_wood_shelving",
+        "scale_factor": 1,
+        "position": {
+            "x": 19.3,
+            "y": 0.0,
+            "z": 3.5
+        },
+        "rotation": {
+            "x": 0.0,
+            "y": 90.0,
+            "z": 0.0
+        },
+        "category": "shelf",
+        "id": 3064096,
+        "affordance_points": []
+    },
+    {
+        "$type": "set_kinematic_state",
+        "id": 3064096,
+        "is_kinematic": true
+    },
+    {
+        "$type": "scale_object",
+        "id": 3064096,
+        "scale_factor": {
+            "x": 1.0,
+            "y": 0.8,
+            "z": 1.2
+        }
+    },
+    {
+        "$type": "add_object",
+        "name": "4ft_wood_shelving",
+        "url": "file://local_asset/Linux/4ft_wood_shelving",
+        "scale_factor": 1,
+        "position": {
+            "x": 20.7,
+            "y": 0.0,
+            "z": 3.5
+        },
+        "rotation": {
+            "x": 0.0,
+            "y": 90.0,
+            "z": 0.0
+        },
+        "category": "shelf",
+        "id": 10073669,
+        "affordance_points": []
+    },
+    {
+        "$type": "set_kinematic_state",
+        "id": 10073669,
+        "is_kinematic": true
+    },
+    {
+        "$type": "scale_object",
+        "id": 10073669,
+        "scale_factor": {
+            "x": 1.0,
+            "y": 0.8,
+            "z": 1.2
+        }
+    },
+    {
+        "$type": "add_object",
+        "name": "basket_18inx18inx12iin_bamboo",
+        "url": "file://local_asset/Linux/basket_18inx18inx12iin_bamboo",
+        "scale_factor": 1,
+        "position": {
+            "x": 9.3,
+            "y": 0.99,
+            "z": -2.0
+        },
+        "rotation": {
+            "x": 0.0,
+            "y": 333.4103295458923,
+            "z": 0.0
+        },
+        "category": "basket",
+        "id": 6418758,
+        "affordance_points": [
+            {
+                "x": -0.2285,
+                "y": 0.305,
+                "z": 0.0
+            },
+            {
+                "x": 0.2285,
+                "y": 0.305,
+                "z": 0.0
+            },
+            {
+                "x": 0,
+                "y": 0.305,
+                "z": 0.2285
+            },
+            {
+                "x": 0,
+                "y": 0.305,
+                "z": -0.2285
+            }
+        ]
+    },
+    {
+        "$type": "set_mass",
+        "id": 6418758,
+        "mass": 10
+    },
+    {
+        "$type": "scale_object",
+        "id": 6418758,
+        "scale_factor": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+        }
+    },
+    {
+        "$type": "add_object",
+        "name": "basket_18inx18inx12iin_plastic_lattice",
+        "url": "file://local_asset/Linux/basket_18inx18inx12iin_plastic_lattice",
+        "scale_factor": 1,
+        "position": {
+            "x": 19.3,
+            "y": 0.99,
+            "z": -2.0
+        },
+        "rotation": {
+            "x": 0.0,
+            "y": 335.0499106853546,
+            "z": 0.0
+        },
+        "category": "basket",
+        "id": 6040862,
+        "affordance_points": [
+            {
+                "x": -0.2285,
+                "y": 0.305,
+                "z": 0.0
+            },
+            {
+                "x": 0.2285,
+                "y": 0.305,
+                "z": 0.0
+            },
+            {
+                "x": 0,
+                "y": 0.305,
+                "z": 0.2285
+            },
+            {
+                "x": 0,
+                "y": 0.305,
+                "z": -0.2285
+            }
+        ]
+    },
+    {
+        "$type": "set_mass",
+        "id": 6040862,
+        "mass": 10
+    },
+    {
+        "$type": "scale_object",
+        "id": 6040862,
+        "scale_factor": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+        }
+    },
+    {
+        "$type": "add_object",
+        "name": "basket_18inx18inx12iin_wicker",
+        "url": "file://local_asset/Linux/basket_18inx18inx12iin_wicker",
+        "scale_factor": 1,
+        "position": {
+            "x": 9.3,
+            "y": 0.99,
+            "z": 3.5
+        },
+        "rotation": {
+            "x": 0.0,
+            "y": 131.56892080392396,
+            "z": 0.0
+        },
+        "category": "basket",
+        "id": 12906705,
+        "affordance_points": [
+            {
+                "x": -0.2285,
+                "y": 0.305,
+                "z": 0.0
+            },
+            {
+                "x": 0.2285,
+                "y": 0.305,
+                "z": 0.0
+            },
+            {
+                "x": 0,
+                "y": 0.305,
+                "z": 0.2285
+            },
+            {
+                "x": 0,
+                "y": 0.305,
+                "z": -0.2285
+            }
+        ]
+    },
+    {
+        "$type": "set_mass",
+        "id": 12906705,
+        "mass": 10
+    },
+    {
+        "$type": "scale_object",
+        "id": 12906705,
+        "scale_factor": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+        }
+    },
+    {
+        "$type": "add_object",
+        "name": "apple",
+        "url": "file://local_asset/Linux/apple",
+        "scale_factor": 0.08862933,
+        "position": {
+            "x": 11.1,
+            "y": 0.33,
+            "z": -2.0
+        },
+        "rotation": {
+            "x": 0.0,
+            "y": 232.83748531305656,
+            "z": 0.0
+        },
+        "category": "apple",
+        "id": 3727167,
+        "affordance_points": []
+    },
+    {
+        "$type": "set_mass",
+        "id": 3727167,
+        "mass": 10
+    },
+    {
+        "$type": "scale_object",
+        "id": 3727167,
+        "scale_factor": {
+            "x": 1.5,
+            "y": 1.5,
+            "z": 1.5
+        }
+    },
+    {
+        "$type": "add_object",
+        "name": "apple",
+        "url": "file://local_asset/Linux/apple",
+        "scale_factor": 0.08862933,
+        "position": {
+            "x": 10.7,
+            "y": 0.99,
+            "z": -2.0
+        },
+        "rotation": {
+            "x": 0.0,
+            "y": 157.88050106919198,
+            "z": 0.0
+        },
+        "category": "apple",
+        "id": 1968759,
+        "affordance_points": []
+    },
+    {
+        "$type": "set_mass",
+        "id": 1968759,
+        "mass": 10
+    },
+    {
+        "$type": "scale_object",
+        "id": 1968759,
+        "scale_factor": {
+            "x": 1.5,
+            "y": 1.5,
+            "z": 1.5
+        }
+    },
+    {
+        "$type": "add_object",
+        "name": "b04_orange_00",
+        "url": "file://local_asset/Linux/b04_orange_00",
+        "scale_factor": 0.1,
+        "position": {
+            "x": 10.299999999999999,
+            "y": 0.33,
+            "z": -2.0
+        },
+        "rotation": {
+            "x": 0.0,
+            "y": 157.69054829028087,
+            "z": 0.0
+        },
+        "category": "orange",
+        "id": 15492255,
+        "affordance_points": []
+    },
+    {
+        "$type": "set_mass",
+        "id": 15492255,
+        "mass": 10
+    },
+    {
+        "$type": "scale_object",
+        "id": 15492255,
+        "scale_factor": {
+            "x": 1.5,
+            "y": 1.5,
+            "z": 1.5
+        }
+    },
+    {
+        "$type": "add_object",
+        "name": "b04_orange_00",
+        "url": "file://local_asset/Linux/b04_orange_00",
+        "scale_factor": 0.1,
+        "position": {
+            "x": 10.7,
+            "y": 0.66,
+            "z": -2.0
+        },
+        "rotation": {
+            "x": 0.0,
+            "y": 98.26214996431517,
+            "z": 0.0
+        },
+        "category": "orange",
+        "id": 9241428,
+        "affordance_points": []
+    },
+    {
+        "$type": "set_mass",
+        "id": 9241428,
+        "mass": 10
+    },
+    {
+        "$type": "scale_object",
+        "id": 9241428,
+        "scale_factor": {
+            "x": 1.5,
+            "y": 1.5,
+            "z": 1.5
+        }
+    },
+    {
+        "$type": "add_object",
+        "name": "b03_banan_001",
+        "url": "file://local_asset/Linux/b03_banan_001",
+        "scale_factor": 1.0,
+        "position": {
+            "x": 11.1,
+            "y": 0.66,
+            "z": -2.0
+        },
+        "rotation": {
+            "x": 0.0,
+            "y": 246.83582581634425,
+            "z": 0.0
+        },
+        "category": "banana",
+        "id": 16427492,
+        "affordance_points": []
+    },
+    {
+        "$type": "set_mass",
+        "id": 16427492,
+        "mass": 10
+    },
+    {
+        "$type": "scale_object",
+        "id": 16427492,
+        "scale_factor": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+        }
+    },
+    {
+        "$type": "add_object",
+        "name": "apple",
+        "url": "file://local_asset/Linux/apple",
+        "scale_factor": 0.08862933,
+        "position": {
+            "x": 10.7,
+            "y": 0.99,
+            "z": 3.5
+        },
+        "rotation": {
+            "x": 0.0,
+            "y": 180.5498006008658,
+            "z": 0.0
+        },
+        "category": "apple",
+        "id": 8737163,
+        "affordance_points": []
+    },
+    {
+        "$type": "set_mass",
+        "id": 8737163,
+        "mass": 10
+    },
+    {
+        "$type": "scale_object",
+        "id": 8737163,
+        "scale_factor": {
+            "x": 1.5,
+            "y": 1.5,
+            "z": 1.5
+        }
+    },
+    {
+        "$type": "add_object",
+        "name": "b04_red_grapes",
+        "url": "file://local_asset/Linux/b04_red_grapes",
+        "scale_factor": 1.0,
+        "position": {
+            "x": 10.7,
+            "y": 0.33,
+            "z": 3.5
+        },
+        "rotation": {
+            "x": 0.0,
+            "y": 206.337014157761,
+            "z": 0.0
+        },
+        "category": "grape",
+        "id": 4231940,
+        "affordance_points": []
+    },
+    {
+        "$type": "set_mass",
+        "id": 4231940,
+        "mass": 10
+    },
+    {
+        "$type": "scale_object",
+        "id": 4231940,
+        "scale_factor": {
+            "x": 1.2,
+            "y": 1.2,
+            "z": 1.2
+        }
+    },
+    {
+        "$type": "add_object",
+        "name": "b04_red_grapes",
+        "url": "file://local_asset/Linux/b04_red_grapes",
+        "scale_factor": 1.0,
+        "position": {
+            "x": 10.299999999999999,
+            "y": 0.33,
+            "z": 3.5
+        },
+        "rotation": {
+            "x": 0.0,
+            "y": 53.90546771521922,
+            "z": 0.0
+        },
+        "category": "grape",
+        "id": 824286,
+        "affordance_points": []
+    },
+    {
+        "$type": "set_mass",
+        "id": 824286,
+        "mass": 10
+    },
+    {
+        "$type": "scale_object",
+        "id": 824286,
+        "scale_factor": {
+            "x": 1.2,
+            "y": 1.2,
+            "z": 1.2
+        }
+    },
+    {
+        "$type": "add_object",
+        "name": "b03_banan_001",
+        "url": "file://local_asset/Linux/b03_banan_001",
+        "scale_factor": 1.0,
+        "position": {
+            "x": 10.7,
+            "y": 0.66,
+            "z": 3.5
+        },
+        "rotation": {
+            "x": 0.0,
+            "y": 274.16670472598946,
+            "z": 0.0
+        },
+        "category": "banana",
+        "id": 8079766,
+        "affordance_points": []
+    },
+    {
+        "$type": "set_mass",
+        "id": 8079766,
+        "mass": 10
+    },
+    {
+        "$type": "scale_object",
+        "id": 8079766,
+        "scale_factor": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+        }
+    },
+    {
+        "$type": "add_object",
+        "name": "b03_banan_001",
+        "url": "file://local_asset/Linux/b03_banan_001",
+        "scale_factor": 1.0,
+        "position": {
+            "x": 10.299999999999999,
+            "y": 0.66,
+            "z": 3.5
+        },
+        "rotation": {
+            "x": 0.0,
+            "y": 127.11043337431857,
+            "z": 0.0
+        },
+        "category": "banana",
+        "id": 15740893,
+        "affordance_points": []
+    },
+    {
+        "$type": "set_mass",
+        "id": 15740893,
+        "mass": 10
+    },
+    {
+        "$type": "scale_object",
+        "id": 15740893,
+        "scale_factor": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+        }
+    },
+    {
+        "$type": "add_object",
+        "name": "b03_loafbread",
+        "url": "file://local_asset/Linux/b03_loafbread",
+        "scale_factor": 1.0,
+        "position": {
+            "x": 14.700000000000001,
+            "y": 0.33,
+            "z": -2.0
+        },
+        "rotation": {
+            "x": 0.0,
+            "y": 127.04258323030507,
+            "z": 0.0
+        },
+        "category": "bread",
+        "id": 16187999,
+        "affordance_points": []
+    },
+    {
+        "$type": "set_mass",
+        "id": 16187999,
+        "mass": 10
+    },
+    {
+        "$type": "scale_object",
+        "id": 16187999,
+        "scale_factor": {
+            "x": 0.5,
+            "y": 0.5,
+            "z": 0.5
+        }
+    },
+    {
+        "$type": "add_object",
+        "name": "b03_loafbread",
+        "url": "file://local_asset/Linux/b03_loafbread",
+        "scale_factor": 1.0,
+        "position": {
+            "x": 14.700000000000001,
+            "y": 0.66,
+            "z": -2.0
+        },
+        "rotation": {
+            "x": 0.0,
+            "y": 40.699478597206266,
+            "z": 0.0
+        },
+        "category": "bread",
+        "id": 14551263,
+        "affordance_points": []
+    },
+    {
+        "$type": "set_mass",
+        "id": 14551263,
+        "mass": 10
+    },
+    {
+        "$type": "scale_object",
+        "id": 14551263,
+        "scale_factor": {
+            "x": 0.5,
+            "y": 0.5,
+            "z": 0.5
+        }
+    },
+    {
+        "$type": "add_object",
+        "name": "b01_croissant",
+        "url": "file://local_asset/Linux/b01_croissant",
+        "scale_factor": 1.0,
+        "position": {
+            "x": 15.299999999999999,
+            "y": 0.99,
+            "z": -2.0
+        },
+        "rotation": {
+            "x": 0.0,
+            "y": 266.3690732778575,
+            "z": 0.0
+        },
+        "category": "croissant",
+        "id": 5244679,
+        "affordance_points": []
+    },
+    {
+        "$type": "set_mass",
+        "id": 5244679,
+        "mass": 10
+    },
+    {
+        "$type": "scale_object",
+        "id": 5244679,
+        "scale_factor": {
+            "x": 0.8,
+            "y": 0.8,
+            "z": 0.8
+        }
+    },
+    {
+        "$type": "add_object",
+        "name": "b01_croissant",
+        "url": "file://local_asset/Linux/b01_croissant",
+        "scale_factor": 1.0,
+        "position": {
+            "x": 14.3,
+            "y": 0.66,
+            "z": -2.0
+        },
+        "rotation": {
+            "x": 0.0,
+            "y": 209.57714609037257,
+            "z": 0.0
+        },
+        "category": "croissant",
+        "id": 13073275,
+        "affordance_points": []
+    },
+    {
+        "$type": "set_mass",
+        "id": 13073275,
+        "mass": 10
+    },
+    {
+        "$type": "scale_object",
+        "id": 13073275,
+        "scale_factor": {
+            "x": 0.8,
+            "y": 0.8,
+            "z": 0.8
+        }
+    },
+    {
+        "$type": "add_object",
+        "name": "b03_burger",
+        "url": "file://local_asset/Linux/b03_burger",
+        "scale_factor": 0.1350851,
+        "position": {
+            "x": 15.7,
+            "y": 0.99,
+            "z": -2.0
+        },
+        "rotation": {
+            "x": 0.0,
+            "y": 263.408623823207,
+            "z": 0.0
+        },
+        "category": "sandwich",
+        "id": 2590297,
+        "affordance_points": []
+    },
+    {
+        "$type": "set_mass",
+        "id": 2590297,
+        "mass": 10
+    },
+    {
+        "$type": "scale_object",
+        "id": 2590297,
+        "scale_factor": {
+            "x": 1.2,
+            "y": 1.2,
+            "z": 1.2
+        }
+    },
+    {
+        "$type": "add_object",
+        "name": "b03_burger",
+        "url": "file://local_asset/Linux/b03_burger",
+        "scale_factor": 0.1350851,
+        "position": {
+            "x": 16.099999999999998,
+            "y": 0.33,
+            "z": -2.0
+        },
+        "rotation": {
+            "x": 0.0,
+            "y": 60.09749792753627,
+            "z": 0.0
+        },
+        "category": "sandwich",
+        "id": 1892135,
+        "affordance_points": []
+    },
+    {
+        "$type": "set_mass",
+        "id": 1892135,
+        "mass": 10
+    },
+    {
+        "$type": "scale_object",
+        "id": 1892135,
+        "scale_factor": {
+            "x": 1.2,
+            "y": 1.2,
+            "z": 1.2
+        }
+    },
+    {
+        "$type": "add_object",
+        "name": "b03_loafbread",
+        "url": "file://local_asset/Linux/b03_loafbread",
+        "scale_factor": 1.0,
+        "position": {
+            "x": 15.7,
+            "y": 0.66,
+            "z": 3.5
+        },
+        "rotation": {
+            "x": 0.0,
+            "y": 105.17957034145206,
+            "z": 0.0
+        },
+        "category": "bread",
+        "id": 8970371,
+        "affordance_points": []
+    },
+    {
+        "$type": "set_mass",
+        "id": 8970371,
+        "mass": 10
+    },
+    {
+        "$type": "scale_object",
+        "id": 8970371,
+        "scale_factor": {
+            "x": 0.5,
+            "y": 0.5,
+            "z": 0.5
+        }
+    },
+    {
+        "$type": "add_object",
+        "name": "b01_croissant",
+        "url": "file://local_asset/Linux/b01_croissant",
+        "scale_factor": 1.0,
+        "position": {
+            "x": 15.299999999999999,
+            "y": 0.99,
+            "z": 3.5
+        },
+        "rotation": {
+            "x": 0.0,
+            "y": 139.93180269073434,
+            "z": 0.0
+        },
+        "category": "croissant",
+        "id": 7899911,
+        "affordance_points": []
+    },
+    {
+        "$type": "set_mass",
+        "id": 7899911,
+        "mass": 10
+    },
+    {
+        "$type": "scale_object",
+        "id": 7899911,
+        "scale_factor": {
+            "x": 0.8,
+            "y": 0.8,
+            "z": 0.8
+        }
+    },
+    {
+        "$type": "add_object",
+        "name": "b03_pink_donuts_mesh",
+        "url": "file://local_asset/Linux/b03_pink_donuts_mesh",
+        "scale_factor": 2.079922,
+        "position": {
+            "x": 15.299999999999999,
+            "y": 0.33,
+            "z": 3.5
+        },
+        "rotation": {
+            "x": 0.0,
+            "y": 226.95061271565496,
+            "z": 0.0
+        },
+        "category": "donut",
+        "id": 16086347,
+        "affordance_points": []
+    },
+    {
+        "$type": "set_mass",
+        "id": 16086347,
+        "mass": 10
+    },
+    {
+        "$type": "scale_object",
+        "id": 16086347,
+        "scale_factor": {
+            "x": 2.5,
+            "y": 2.5,
+            "z": 2.5
+        }
+    },
+    {
+        "$type": "add_object",
+        "name": "b03_pink_donuts_mesh",
+        "url": "file://local_asset/Linux/b03_pink_donuts_mesh",
+        "scale_factor": 2.079922,
+        "position": {
+            "x": 13.9,
+            "y": 0.66,
+            "z": 3.5
+        },
+        "rotation": {
+            "x": 0.0,
+            "y": 140.22730714610134,
+            "z": 0.0
+        },
+        "category": "donut",
+        "id": 14524985,
+        "affordance_points": []
+    },
+    {
+        "$type": "set_mass",
+        "id": 14524985,
+        "mass": 10
+    },
+    {
+        "$type": "scale_object",
+        "id": 14524985,
+        "scale_factor": {
+            "x": 2.5,
+            "y": 2.5,
+            "z": 2.5
+        }
+    },
+    {
+        "$type": "add_object",
+        "name": "b03_pink_donuts_mesh",
+        "url": "file://local_asset/Linux/b03_pink_donuts_mesh",
+        "scale_factor": 2.079922,
+        "position": {
+            "x": 15.7,
+            "y": 0.33,
+            "z": 3.5
+        },
+        "rotation": {
+            "x": 0.0,
+            "y": 107.61288185856392,
+            "z": 0.0
+        },
+        "category": "donut",
+        "id": 2486700,
+        "affordance_points": []
+    },
+    {
+        "$type": "set_mass",
+        "id": 2486700,
+        "mass": 10
+    },
+    {
+        "$type": "scale_object",
+        "id": 2486700,
+        "scale_factor": {
+            "x": 2.5,
+            "y": 2.5,
+            "z": 2.5
+        }
+    },
+    {
+        "$type": "add_object",
+        "name": "102_pepsi_can_12_fl_oz_vray",
+        "url": "file://local_asset/Linux/102_pepsi_can_12_fl_oz_vray",
+        "scale_factor": 1.0,
+        "position": {
+            "x": 19.7,
+            "y": 0.33,
+            "z": -2.0
+        },
+        "rotation": {
+            "x": 0.0,
+            "y": 98.92200448004667,
+            "z": 0.0
+        },
+        "category": "soda can",
+        "id": 15097590,
+        "affordance_points": []
+    },
+    {
+        "$type": "set_mass",
+        "id": 15097590,
+        "mass": 10
+    },
+    {
+        "$type": "scale_object",
+        "id": 15097590,
+        "scale_factor": {
+            "x": 1.6,
+            "y": 1.6,
+            "z": 1.6
+        }
+    },
+    {
+        "$type": "add_object",
+        "name": "102_pepsi_can_12_fl_oz_vray",
+        "url": "file://local_asset/Linux/102_pepsi_can_12_fl_oz_vray",
+        "scale_factor": 1.0,
+        "position": {
+            "x": 20.3,
+            "y": 0.99,
+            "z": -2.0
+        },
+        "rotation": {
+            "x": 0.0,
+            "y": 9.52457915801447,
+            "z": 0.0
+        },
+        "category": "soda can",
+        "id": 10039413,
+        "affordance_points": []
+    },
+    {
+        "$type": "set_mass",
+        "id": 10039413,
+        "mass": 10
+    },
+    {
+        "$type": "scale_object",
+        "id": 10039413,
+        "scale_factor": {
+            "x": 1.6,
+            "y": 1.6,
+            "z": 1.6
+        }
+    },
+    {
+        "$type": "add_object",
+        "name": "102_pepsi_can_12_fl_oz_vray",
+        "url": "file://local_asset/Linux/102_pepsi_can_12_fl_oz_vray",
+        "scale_factor": 1.0,
+        "position": {
+            "x": 21.099999999999998,
+            "y": 0.99,
+            "z": -2.0
+        },
+        "rotation": {
+            "x": 0.0,
+            "y": 60.75980278993321,
+            "z": 0.0
+        },
+        "category": "soda can",
+        "id": 3681586,
+        "affordance_points": []
+    },
+    {
+        "$type": "set_mass",
+        "id": 3681586,
+        "mass": 10
+    },
+    {
+        "$type": "scale_object",
+        "id": 3681586,
+        "scale_factor": {
+            "x": 1.6,
+            "y": 1.6,
+            "z": 1.6
+        }
+    },
+    {
+        "$type": "add_object",
+        "name": "104_sprite_can_12_fl_oz_vray",
+        "url": "file://local_asset/Linux/104_sprite_can_12_fl_oz_vray",
+        "scale_factor": 1.0,
+        "position": {
+            "x": 20.3,
+            "y": 0.33,
+            "z": -2.0
+        },
+        "rotation": {
+            "x": 0.0,
+            "y": 49.37105763860758,
+            "z": 0.0
+        },
+        "category": "soda can",
+        "id": 9734469,
+        "affordance_points": []
+    },
+    {
+        "$type": "set_mass",
+        "id": 9734469,
+        "mass": 10
+    },
+    {
+        "$type": "scale_object",
+        "id": 9734469,
+        "scale_factor": {
+            "x": 1.6,
+            "y": 1.6,
+            "z": 1.6
+        }
+    },
+    {
+        "$type": "add_object",
+        "name": "104_sprite_can_12_fl_oz_vray",
+        "url": "file://local_asset/Linux/104_sprite_can_12_fl_oz_vray",
+        "scale_factor": 1.0,
+        "position": {
+            "x": 20.7,
+            "y": 0.33,
+            "z": -2.0
+        },
+        "rotation": {
+            "x": 0.0,
+            "y": 357.399802739931,
+            "z": 0.0
+        },
+        "category": "soda can",
+        "id": 5472519,
+        "affordance_points": []
+    },
+    {
+        "$type": "set_mass",
+        "id": 5472519,
+        "mass": 10
+    },
+    {
+        "$type": "scale_object",
+        "id": 5472519,
+        "scale_factor": {
+            "x": 1.6,
+            "y": 1.6,
+            "z": 1.6
+        }
+    },
+    {
+        "$type": "add_object",
+        "name": "fanta_orange_can_12_fl_oz_vray",
+        "url": "file://local_asset/Linux/fanta_orange_can_12_fl_oz_vray",
+        "scale_factor": 1.0,
+        "position": {
+            "x": 20.7,
+            "y": 0.99,
+            "z": -2.0
+        },
+        "rotation": {
+            "x": 0.0,
+            "y": 357.76429710854393,
+            "z": 0.0
+        },
+        "category": "soda can",
+        "id": 16576644,
+        "affordance_points": []
+    },
+    {
+        "$type": "set_mass",
+        "id": 16576644,
+        "mass": 10
+    },
+    {
+        "$type": "scale_object",
+        "id": 16576644,
+        "scale_factor": {
+            "x": 1.6,
+            "y": 1.6,
+            "z": 1.6
+        }
+    },
+    {
+        "$type": "add_object",
+        "name": "fanta_orange_can_12_fl_oz_vray",
+        "url": "file://local_asset/Linux/fanta_orange_can_12_fl_oz_vray",
+        "scale_factor": 1.0,
+        "position": {
+            "x": 21.099999999999998,
+            "y": 0.33,
+            "z": -2.0
+        },
+        "rotation": {
+            "x": 0.0,
+            "y": 191.76058528606944,
+            "z": 0.0
+        },
+        "category": "soda can",
+        "id": 13121213,
+        "affordance_points": []
+    },
+    {
+        "$type": "set_mass",
+        "id": 13121213,
+        "mass": 10
+    },
+    {
+        "$type": "scale_object",
+        "id": 13121213,
+        "scale_factor": {
+            "x": 1.6,
+            "y": 1.6,
+            "z": 1.6
+        }
+    },
+    {
+        "$type": "add_object",
+        "name": "b03_cocacola_can_cage",
+        "url": "file://local_asset/Linux/b03_cocacola_can_cage",
+        "scale_factor": 1.1,
+        "position": {
+            "x": 21.099999999999998,
+            "y": 0.33,
+            "z": 3.5
+        },
+        "rotation": {
+            "x": 0.0,
+            "y": 42.267387197874406,
+            "z": 0.0
+        },
+        "category": "soda can",
+        "id": 4539040,
+        "affordance_points": []
+    },
+    {
+        "$type": "set_mass",
+        "id": 4539040,
+        "mass": 10
+    },
+    {
+        "$type": "scale_object",
+        "id": 4539040,
+        "scale_factor": {
+            "x": 2.0,
+            "y": 2.0,
+            "z": 2.0
+        }
+    },
+    {
+        "$type": "add_object",
+        "name": "b03_cocacola_can_cage",
+        "url": "file://local_asset/Linux/b03_cocacola_can_cage",
+        "scale_factor": 1.1,
+        "position": {
+            "x": 19.3,
+            "y": 0.66,
+            "z": 3.5
+        },
+        "rotation": {
+            "x": 0.0,
+            "y": 253.5939544509121,
+            "z": 0.0
+        },
+        "category": "soda can",
+        "id": 13367589,
+        "affordance_points": []
+    },
+    {
+        "$type": "set_mass",
+        "id": 13367589,
+        "mass": 10
+    },
+    {
+        "$type": "scale_object",
+        "id": 13367589,
+        "scale_factor": {
+            "x": 2.0,
+            "y": 2.0,
+            "z": 2.0
+        }
+    },
+    {
+        "$type": "add_object",
+        "name": "b03_cocacola_can_cage",
+        "url": "file://local_asset/Linux/b03_cocacola_can_cage",
+        "scale_factor": 1.1,
+        "position": {
+            "x": 18.900000000000002,
+            "y": 0.33,
+            "z": 3.5
+        },
+        "rotation": {
+            "x": 0.0,
+            "y": 103.98390110425441,
+            "z": 0.0
+        },
+        "category": "soda can",
+        "id": 11623024,
+        "affordance_points": []
+    },
+    {
+        "$type": "set_mass",
+        "id": 11623024,
+        "mass": 10
+    },
+    {
+        "$type": "scale_object",
+        "id": 11623024,
+        "scale_factor": {
+            "x": 2.0,
+            "y": 2.0,
+            "z": 2.0
+        }
+    },
+    {
+        "$type": "add_object",
+        "name": "104_sprite_can_12_fl_oz_vray",
+        "url": "file://local_asset/Linux/104_sprite_can_12_fl_oz_vray",
+        "scale_factor": 1.0,
+        "position": {
+            "x": 19.7,
+            "y": 0.99,
+            "z": 3.5
+        },
+        "rotation": {
+            "x": 0.0,
+            "y": 91.4726939353613,
+            "z": 0.0
+        },
+        "category": "soda can",
+        "id": 475828,
+        "affordance_points": []
+    },
+    {
+        "$type": "set_mass",
+        "id": 475828,
+        "mass": 10
+    },
+    {
+        "$type": "scale_object",
+        "id": 475828,
+        "scale_factor": {
+            "x": 1.6,
+            "y": 1.6,
+            "z": 1.6
+        }
+    },
+    {
+        "$type": "add_object",
+        "name": "104_sprite_can_12_fl_oz_vray",
+        "url": "file://local_asset/Linux/104_sprite_can_12_fl_oz_vray",
+        "scale_factor": 1.0,
+        "position": {
+            "x": 18.900000000000002,
+            "y": 0.99,
+            "z": 3.5
+        },
+        "rotation": {
+            "x": 0.0,
+            "y": 146.4502472211308,
+            "z": 0.0
+        },
+        "category": "soda can",
+        "id": 15468866,
+        "affordance_points": []
+    },
+    {
+        "$type": "set_mass",
+        "id": 15468866,
+        "mass": 10
+    },
+    {
+        "$type": "scale_object",
+        "id": 15468866,
+        "scale_factor": {
+            "x": 1.6,
+            "y": 1.6,
+            "z": 1.6
+        }
+    },
+    {
+        "$type": "add_object",
+        "name": "fanta_orange_can_12_fl_oz_vray",
+        "url": "file://local_asset/Linux/fanta_orange_can_12_fl_oz_vray",
+        "scale_factor": 1.0,
+        "position": {
+            "x": 19.7,
+            "y": 0.66,
+            "z": 3.5
+        },
+        "rotation": {
+            "x": 0.0,
+            "y": 351.1542410595942,
+            "z": 0.0
+        },
+        "category": "soda can",
+        "id": 3479487,
+        "affordance_points": []
+    },
+    {
+        "$type": "set_mass",
+        "id": 3479487,
+        "mass": 10
+    },
+    {
+        "$type": "scale_object",
+        "id": 3479487,
+        "scale_factor": {
+            "x": 1.6,
+            "y": 1.6,
+            "z": 1.6
+        }
+    },
+    {
+        "$type": "add_object",
+        "name": "b03_fire_hydrant",
+        "url": "https://tdw-private.s3.amazonaws.com/models/linux/2018-2019.1/b03_fire_hydrant",
+        "scale_factor": 1.0,
+        "position": {
+            "x": 2.0,
+            "y": 0.0,
+            "z": 5.5
+        },
+        "rotation": {
+            "x": 0.0,
+            "y": 90.0,
+            "z": 0.0
+        },
+        "category": "fire hydrant",
+        "id": 11382152,
+        "affordance_points": []
+    },
+    {
+        "$type": "set_kinematic_state",
+        "id": 11382152,
+        "is_kinematic": true
+    },
+    {
+        "$type": "add_object",
+        "name": "huffy_nel_lusso_womens_cruiser_bike_2011vray",
+        "url": "file://local_asset/Linux/huffy_nel_lusso_womens_cruiser_bike_2011vray",
+        "scale_factor": 1.0,
+        "position": {
+            "x": 19.181693842529132,
+            "y": 0.0,
+            "z": 1.6876185123439085
+        },
+        "rotation": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+        },
+        "category": "bicycle",
+        "id": 13353144,
+        "affordance_points": [
+            {
+                "x": -0.10441650450229645,
+                "y": 0.9543246030807495,
+                "z": -0.33645111322402954
+            },
+            {
+                "x": -0.10129550844430923,
+                "y": 0.9553921222686768,
+                "z": 0.32874616980552673
+            }
+        ]
+    },
+    {
+        "$type": "set_kinematic_state",
+        "id": 13353144,
+        "is_kinematic": true
+    },
+    {
+        "$type": "scale_object",
+        "id": 13353144,
+        "scale_factor": {
+            "x": 1.2,
+            "y": 1.2,
+            "z": 1.2
+        }
+    },
+    {
+        "$type": "add_object",
+        "name": "white_shopping_bag",
+        "url": "https://tdw-public.s3.amazonaws.com/models/linux/2018-2019.1/white_shopping_bag",
+        "scale_factor": 1.0,
+        "position": {
+            "x": 18.88169384252913,
+            "y": 0.6,
+            "z": 1.5376185123439086
+        },
+        "rotation": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+        },
+        "category": "suitcase",
+        "id": 10441216,
+        "affordance_points": []
+    },
+    {
+        "$type": "parent_object_to_object",
+        "parent_id": 13353144,
+        "id": 10441216
+    },
+    {
+        "$type": "set_kinematic_state",
+        "id": 10441216,
+        "is_kinematic": true,
+        "use_gravity": false
+    },
+    {
+        "$type": "add_object",
+        "name": "white_shopping_bag",
+        "url": "https://tdw-public.s3.amazonaws.com/models/linux/2018-2019.1/white_shopping_bag",
+        "scale_factor": 1.0,
+        "position": {
+            "x": 18.88169384252913,
+            "y": 0.6,
+            "z": 1.4626185123439084
+        },
+        "rotation": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+        },
+        "category": "suitcase",
+        "id": 14157840,
+        "affordance_points": []
+    },
+    {
+        "$type": "parent_object_to_object",
+        "parent_id": 13353144,
+        "id": 14157840
+    },
+    {
+        "$type": "set_kinematic_state",
+        "id": 14157840,
+        "is_kinematic": true,
+        "use_gravity": false
+    },
+    {
+        "$type": "step_physics",
+        "frames": 50
+    }
+]

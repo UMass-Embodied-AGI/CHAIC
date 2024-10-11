@@ -1,0 +1,67 @@
+{
+    "agent": {
+        "0": [
+            -0.5,
+            0.1,
+            -0.75
+        ],
+        "1": [
+            5.25,
+            0.1,
+            2.0
+        ]
+    },
+    "avatar": {
+        "id": "teaser",
+        "position": {
+            "x": -3,
+            "y": 8,
+            "z": -3
+        },
+        "look_at": {
+            "x": 15,
+            "y": -8,
+            "z": 10
+        }
+    },
+    "mass_map": {
+        "3658457": 300,
+        "3021769": 900,
+        "2720889": 50,
+        "7614446": 700,
+        "8969334": 120
+    },
+    "scene_id": 7,
+    "agent_weight_constraint": {
+        "0": 100,
+        "1": 600
+    },
+    "task": {
+        "goal_position_names": "truck",
+        "goal_task": [
+            [
+                "arflex_strips_sofa",
+                1
+            ],
+            [
+                "b03_grandpiano2014",
+                1
+            ],
+            [
+                "kettle_2",
+                1
+            ],
+            [
+                "sm_tv",
+                1
+            ],
+            [
+                "emeco_navy_chair",
+                1
+            ]
+        ],
+        "container_names": [],
+        "task_kind": "outdoor_furniture",
+        "constraint_type": "weight"
+    }
+}
