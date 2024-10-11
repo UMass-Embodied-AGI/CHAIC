@@ -1,8 +1,12 @@
-# Constrained Human-AI Cooperation (CHAIC): An Inclusive Embodied Social Intelligence Challenge
+# Constrained Human-AI Cooperation (CHAIC): An Inclusive Embodied Social Intelligence Challenge (NeurIPS 2024)
 
 ## ✨ Introduction
-This is the anonymous raw code for the NeurIPS Dataset Track submission CHAIC.
+The repo contains code for the following paper:
 
+**Constrained Human-AI Cooperation: An Inclusive Embodied Social Intelligence Challenge**
+
+_Authors: Weihua Du*, Qiushi Lyu*, Jiaming Shan, Zhenting Qi, Hongxin Zhang, Sunli Chen, Andi Peng, Tianmin Shu, Kwonjoon Lee, Behzad Dariush, Chuang Gan_
+ 
 You could view the [[Project Page](https://chaic-neurips.github.io/CHAIC/)] for some video demos.
 
 > We introduce the Constrained Human-AI Cooperation (CHAIC), an inclusive embodied social intelligence challenge for testing social perception and cooperation in embodied agents. In CHAIC, the goal is for an embodied agent equipped with egocentric observations to aid a human possibly operating under physical constraints, e.g. unable to reach high places or confined to a wheelchair, to perform common household or outdoor tasks as efficiently as possible. To do this, a successful helper must (1). infer the human's intents and constraints by following the human and observing their behaviors (social perception), and (2). make a cooperative plan tailored to the human user to solve the task as fast as possible together as a team (cooperative planning). 
