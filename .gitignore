@@ -202,6 +202,6 @@ detection_pipeline/epoch_4.pth
 smart_help_baseline/oppo_model.pth
 nohup.out
 behavior.txt
-agent/
+agent/__pycache__
 
 **/~lost+found
