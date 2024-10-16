@@ -205,3 +205,4 @@ behavior.txt
 agent/__pycache__
 
 **/~lost+found
+.DS_Store
