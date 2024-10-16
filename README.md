@@ -43,9 +43,16 @@ python demo/demo_scene.py
 ```bash
 pip install -U openmim
 mim install mmengine
+mim install mmcv==2.1.0
 mim install mmdet
 pip install mmaction2
 bash detection_pipeline/download_ckpt.sh
+```
+
+**Step 3:** Download the asset needed for the environment:
+
+```bash
+bash scripts/download_local_asset.sh
 ```
 
 After that, you can run the perception demos to verify them:
