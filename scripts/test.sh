@@ -3,12 +3,12 @@ pkill -f -9 "port $port"
 
 python tdw-gym/experiment.py \
 --output_dir results \
---experiment_name outdoor_shopping_task_test_helper \
+--experiment_name high_container_task_test_helper \
 --run_id test \
 --port $port \
---agents plan_agent test_agent child_agent \
+--agents plan_agent example_agent \
 --max_frames 3000 \
---data_prefix dataset/test_dataset/outdoor_shopping \
+--data_prefix dataset/test_dataset/highcontainer \
 --screen_size 512 \
 --debug
 
