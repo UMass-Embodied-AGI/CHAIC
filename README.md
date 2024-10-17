@@ -117,41 +117,43 @@ First you should learn about the details of the observation. The environment ret
 - **depth**: depth image of the current agent's view
 - **camera_matrix**: the camera matrix of current agent's ego camera
 - **FOV**: the field of view of current agent's ego camera
-- **agent**: a list of length 6 that contains the position (x, y, z) and forward (fx, fy, fz) of the agent, formatted as [x, y, z, fx, fy, fz]. 
+- **agent**: a list of length 6 that contains the current position (x, y, z) and forward (fx, fy, fz) of the agent, formatted as [x, y, z, fx, fy, fz]. 
 - **held_objects**: all the objects that current agent is holding. It is a list of length 2 that contains the information of the object that is held in the agent's two hands. Each object's information contains its name, type and a unique id. If it's a container, it also includes the information of the objects in it.
-- **status**: the status of current action, which is a number from 0 to 2. 0 for 'ongoing', 1 for 'failure', 2 for 'success.
+- **status**: the status of current action, which is a number from 0 to 2. 0 for 'ongoing', 1 for 'failure', 2 for 'success'.
 - **current_frames**: the number of frames passed
 - **valid**: whether the last action of the agent is valid
 - **previous_action** & **previous_status**: all previous actions of the agent and their corresponding status
   
-To create a new agent, you must first create a folder named 'agent' in the root directory of the repository, and create a python file in it to write your own agent. You need to implement the following two functions in the python file:
+To create a new agent, you must create a python file in a folder named 'agent' in the root directory of the repository, and write your own agent in it. You must create a class named 'PlanAgent' and implement the following two functions in the class:
 
 ```python
-def reset(obs, info):
-def act(obs):
+def reset(self, obs, info):
+def act(self, obs):
 ```
 
-The function **reset** is used for initializing the agent at the beginning of the episode. It receives two arguments, that 'obs' is the initial observation of the agent, and 'info' is the information of the task. 
+The function **reset** is used for initializing the agent at the beginning of the episode. It receives two arguments: 'obs' is the initial observation of the agent, and 'info' is the information of the task. The information contains the names of all the possible objects, the goal position and id, the name of rooms, etc. 
 
-The function **act** is the core part of the agent. It determines the next action of the agent. It receives the current observation from the environment, and returns the action. Each action should be a dictionary and set its "type" key to an integer between 0 and 7, each refers to a certain type of action:
+The function **act** is the core part of the agent. It determines the next action of the agent. It receives the current observation from the environment, and returns the action. Each action should be a dictionary and set its "type" key to an integer between 0 and 8, each refers to a certain type of action:
 
 - 0: move forward by 0.5 meters
 - 1: turn left by 15 degrees
 - 2: turn right by 15 degrees
-- 3: pick up an object, it should contain another key named 'object' whose value is the id of object to pick, together with a key named 'arm' representing which hand to pick. 0 for left hand, 1 for right hand.
-- 4: put the object in one hand to the container in other hand. 
-- 5: put the object on some surface, it should contain a key named 'object' whose value is the id of object to put on its surface.
-- 6: remove obstacle, it should contain another key named 'object' whose value is the id of obstacle to pick, together with a key named 'arm' representing which hand to pick.
-- 7: wait for several frames, it should contain a key named 'delay' indicating the number of frames to wait.
+- 3: pick up an object, it should contain another key named 'object' whose value is the id of object to pick, together with a key named 'arm' representing which hand to pick. 'left' for left hand, 'right' for right hand.
+- 4: put the object in one hand to the container in the other hand. 
+- 5: put the object in one hand on some surface, it should contain a key named 'object' whose value is the id of object to put on its surface, together with a key named 'arm' representing which hand to put.
+- 6: send message, which would never be used.
+- 7: remove obstacle, it should contain another key named 'object' whose value is the id of obstacle to pick, together with a key named 'arm' representing which hand to pick.
+- 8: wait for several frames, it should contain a key named 'delay' indicating the number of frames to wait.
+
+We provide an example in ``agent/example_agent.py``. If you have any other questions, please refer to that example first.
 
 To evaluate your agent on a certain task, you should create a script like the following.
 
 ```bash
-bash scripts/plan_helper/test_{your_task}_plan_helper.sh
+bash scripts/test.sh
 ```
 
-You should change the second items of the 'agents' argument, which represents the type of the helper, to the name of the python file of your implemented agent. Then you can just run the script and get the result. You can also change the 'output_dir' of the script to customize the position to save the result.
-
+This script evaluates the example agent mentioned above in the High Container task. You should change the second item of the 'agents' argument, which represents the name of the helper, to the name of the python file of your implemented agent. Then you can just run the script and get the result. You can also change the 'output_dir' of the script to customize the position to save the result.
 
 
 ## 🏆 Results

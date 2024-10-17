@@ -6,7 +6,7 @@ python tdw-gym/experiment.py \
 --experiment_name high_container_task_test_helper \
 --run_id test \
 --port $port \
---agents plan_agent test_agent \
+--agents plan_agent example_agent \
 --max_frames 3000 \
 --data_prefix dataset/test_dataset/highcontainer \
 --screen_size 512 \
