@@ -104,6 +104,8 @@ class Challenge:
                 #    if not ('outdoor_furniture' in self.data[0]["task"]["task_kind"]):
                 #        target_object_names = info['possible_target_object_count']
                 
+                info['output_dir'] = os.path.join(self.output_dir, str(episode))
+                info['env_api'] = env_api[id]
                 if info['goal_description'] is not None:
                     if id == 1:
                         agent.reset(obs = state[str(id)], info = info)
