@@ -720,7 +720,7 @@ video {
         <h3 style="text-align: center;">Tasks</h3>
         <div class="flex-row">
             <p>
-                The eight kinds of tasks contain both indoor and outdoor scenes, and the task names are: No constraint, Low target, Obstacle, High target, How goal location, High container, Shopping, and Moving house. Here is their brief description:
+                The eight kinds of tasks contain both indoor and outdoor scenes, and the task names are: No constraint, Low target, Obstacle, High target, High goal location, High container, Shopping, and Moving house. Here is their brief description:
             </p>
         </div>
         <center>
@@ -765,7 +765,7 @@ video {
     <section id="Baseline Overview"/>
     <div class="flex-row">
         <p>
-        We test six types of helpers: <b>Random Helper</b>, <b>Rule-based Hierarchical Plan Helper (RHP)</b>, <b>LLM+BM Helper</b>, <b>VLM Helper</b>, <b>RL Helper</b> and <b>SmartHelp Helper</b>. LLM+BM Helper achieves the best performance in our benchmark. Figure 2 is an overview of the LLM+BM Helper, which is equipped with specific modules for \textit{Perception}, \textit{Behavior Modeling}, \textit{Decision}, and \textit{Execution}. (1) The <b>perception module</b> detects objects from raw RGB images; (2) the <b>memory module</b> builds the semantic map of the environment and records behaviors; (3) the <b>behavior modeling module</b> recognizes the action of the partner and localizes the object corresponding to the action; (4) the <b>decision module</b> decides plans for the next steps using foundation models; and (5) the <b>execution module</b> generates low-level actions.
+        We test six types of helpers: <b>Random Helper</b>, <b>Rule-based Hierarchical Plan Helper (RHP)</b>, <b>LLM+BM Helper</b>, <b>VLM Helper</b>, <b>RL Helper</b> and <b>SmartHelp Helper</b>. LLM+BM Helper achieves the best performance in our benchmark. Figure 2 is an overview of the LLM+BM Helper, which is equipped with specific modules for <em>Perception</em>, <em>Behavior Modeling</em>, <em>Decision</em>, and <em>Execution</em>. (1) The <b>perception module</b> detects objects from raw RGB images; (2) the <b>memory module</b> builds the semantic map of the environment and records behaviors; (3) the <b>behavior modeling module</b> recognizes the action of the partner and localizes the object corresponding to the action; (4) the <b>decision module</b> decides plans for the next steps using foundation models; and (5) the <b>execution module</b> generates low-level actions.
         <hr>
         <hr>
         Combining the wide knowledge from foundation models and precise perception from fine-tuned detection models, the LLM+BM Helper can infer the constrained agent's goal and constraints accurately and efficiently. Here is an exmaple of the LLM+BM Helper's behavior:
