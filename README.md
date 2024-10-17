@@ -1,4 +1,4 @@
-# Constrained Human-AI Cooperation (CHAIC): An Inclusive Embodied Social Intelligence Challenge (NeurIPS 2024)
+# Constrained Human-AI Cooperation (CHAIC): An Inclusive Embodied Social Intelligence Challenge (NeurIPS D&B Track 2024)
 
 ## ✨ Introduction
 The repo contains code for the following paper:
@@ -7,7 +7,7 @@ The repo contains code for the following paper:
 
 _Authors: Weihua Du*, Qiushi Lyu*, Jiaming Shan, Zhenting Qi, Hongxin Zhang, Sunli Chen, Andi Peng, Tianmin Shu, Kwonjoon Lee, Behzad Dariush, Chuang Gan_
  
-You could view the [[Project Page](https://chaic-neurips.github.io/CHAIC/)] for some video demos.
+You could view the [[Project Page](vis-www.cs.umass.edu/CHAIC/)] for some video demos.
 
 > We introduce Constrained Human-AI Cooperation (CHAIC), an inclusive embodied social intelligence challenge designed to test social perception and cooperation in embodied agents. In CHAIC, the goal is for an embodied agent equipped with egocentric observations to assist a human who may be operating under physical constraints—e.g., unable to reach high places or confined to a wheelchair—in performing common household or outdoor tasks as efficiently as possible. To achieve this, a successful helper must: (1) infer the human's intents and constraints by following the human and observing their behaviors (social perception), and (2) make a cooperative plan tailored to the human user to solve the task as quickly as possible, working together as a team (cooperative planning).
 > 
@@ -111,20 +111,20 @@ One goal of our benchmark is to mimic real life as similar as possible. Therefor
 
 ## 🤖 Creating a new agent
 
-First you should learn about the details of the observation. The environment returns each agent's observation every step, which is a dictionary that includes the following items:
+First, you should learn about the details of the observation. The environment returns each agent's observation every step, which is a dictionary that includes the following items:
 
-- **rgb**: RGB image of the current agent's view
+- **RGB**: RGB image of the current agent's view
 - **depth**: depth image of the current agent's view
-- **camera_matrix**: the camera matrix of current agent's ego camera
-- **FOV**: the field of view of current agent's ego camera
+- **camera_matrix**: the camera matrix of the current agent's ego camera
+- **FOV**: the field of view of the current agent's ego camera
 - **agent**: a list of length 6 that contains the current position (x, y, z) and forward (fx, fy, fz) of the agent, formatted as [x, y, z, fx, fy, fz]. 
-- **held_objects**: all the objects that current agent is holding. It is a list of length 2 that contains the information of the object that is held in the agent's two hands. Each object's information contains its name, type and a unique id. If it's a container, it also includes the information of the objects in it.
-- **status**: the status of current action, which is a number from 0 to 2. 0 for 'ongoing', 1 for 'failure', 2 for 'success'.
+- **held_objects**: all the objects that the current agent is holding. It is a list of length 2 that contains the information of the object that is held in the agent's two hands. Each object's information contains its name, type, and a unique id. If it's a container, it also includes the information of the objects in it.
+- **status**: the status of the current action, which is a number from 0 to 2. 0 for 'ongoing', 1 for 'failure', and 2 for 'success'.
 - **current_frames**: the number of frames passed
 - **valid**: whether the last action of the agent is valid
 - **previous_action** & **previous_status**: all previous actions of the agent and their corresponding status
   
-To create a new agent, you must create a python file in a folder named 'agent' in the root directory of the repository, and write your own agent in it. You must create a class named 'PlanAgent' and implement the following two functions in the class:
+To create a new agent, you must create a Python file in a folder named 'agent' in the root directory of the repository, and write your own agent in it. You must create a class named 'PlanAgent' and implement the following two functions in the class:
 
 ```python
 def reset(self, obs, info):
@@ -153,12 +153,15 @@ To evaluate your agent on a certain task, you should create a script like the fo
 bash scripts/test.sh
 ```
 
-This script evaluates the example agent mentioned above in the High Container task. You should change the second item of the 'agents' argument, which represents the name of the helper, to the name of the python file of your implemented agent. Then you can just run the script and get the result. You can also change the 'output_dir' of the script to customize the position to save the result.
+This script evaluates the example agent mentioned above in the High Container task. You should change the second item of the 'agents' argument, which represents the helper's name, to the name of the Python file of your implemented agent. Then you can just run the script and get the result. You can also change the 'output_dir' of the script to customize the position and save the result.
 
+## 🛠️ TODO
+
+- [ ] We found that sometimes the wheelchair agent may block at corners due to its model shape, so temporarily the model of the wheelchair agent is replaced by another model to decrease the variance of results. This bug will be fixed soon.
 
 ## 🏆 Results
 
-The table below is the quantitative results on CHAIC benchmark. We report the average Transport Rate (TR), Efficiency Improvement (EI), Goal Inference Accuracy (IA), Completion Ratio of Helper (CR) and Standard Error of Transport Rate (STD_TR) here. w/o means the main agent does the task solely without a helper. The Emergency Rate (ER) metric is also reported for the shopping task. 
+The table below shows the quantitative results of the CHAIC benchmark. We report the average Transport Rate (TR), Efficiency Improvement (EI), Goal Inference Accuracy (IA), Completion Ratio of Helper (CR), and Standard Error of Transport Rate (STD_TR) here. w/o means the main agent does the task solely without a helper. The Emergency Rate (ER) metric is also reported for the shopping task. 
 
 <table>
     <tr>
