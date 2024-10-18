@@ -98,7 +98,7 @@ By adding ``--gt_mask`` or ``--gt_behavior`` in the scripts, the environment wil
 
 ### Multi-Agent Asynchronized Setting
 
-Agents may take different number of frames to finish (or fail) one action, and one env step is finished until any agent's action is not under the ongoing status, and the current obs is returned to all agents. Then, 
+Agents may take different frames to finish (or fail) one action, and one env step is finished until any agent's action is not under the ongoing status, and the current obs is returned to all agents. Then, 
 all agents are asked for a new action, and any agent having ongoing action will directly switch to the new action if its action changes. 
 
 ### Heterogeneity of Agents
@@ -107,7 +107,7 @@ Different types of agents have different capacity scopes, and agents with differ
 
 ### Realistic Observation
 
-One goal of our benchmark is to mimic real life as similar as possible. Therefore, we only provide the raw RGBD images as the main observation (the benchmark also supports many other types of observation), making our benchmark challenging and having a wide range of application space.
+One goal of CHAIC is to mimic real life as similar as possible. Therefore, we only provide the raw RGB-D images as the main observation (the benchmark also supports many other types of observation), making our benchmark challenging and having a wide range of application space.
 
 ## 🤖 Creating a new agent
 
@@ -131,23 +131,23 @@ def reset(self, obs, info):
 def act(self, obs):
 ```
 
-The function **reset** is used for initializing the agent at the beginning of the episode. It receives two arguments: 'obs' is the initial observation of the agent, and 'info' is the information of the task. The information contains the names of all the possible objects, the goal position and id, the name of rooms, etc. 
+The function **reset** is used for initializing the agent at the beginning of the episode. It receives two arguments: 'obs' is the initial observation of the agent, and 'info' is the information of the task. The information contains the names of all the possible objects, the goal location, rooms, etc. 
 
-The function **act** is the core part of the agent. It determines the next action of the agent. It receives the current observation from the environment, and returns the action. Each action should be a dictionary and set its "type" key to an integer between 0 and 8, each refers to a certain type of action:
+The function **act** is the core part of the agent. It determines the next action of the agent. It receives the current observation from the environment and returns the action. Each action should be a dictionary and set its "type" key to an integer between 0 and 8, each refers to a certain type of action:
 
 - 0: move forward by 0.5 meters
 - 1: turn left by 15 degrees
 - 2: turn right by 15 degrees
-- 3: pick up an object, it should contain another key named 'object' whose value is the id of object to pick, together with a key named 'arm' representing which hand to pick. 'left' for left hand, 'right' for right hand.
+- 3: pick up an object, it should contain another key named 'object' whose value is the id of the object to pick, together with a key named 'arm' representing which hand to pick. 'left' for left hand, 'right' for right hand.
 - 4: put the object in one hand to the container in the other hand. 
-- 5: put the object in one hand on some surface, it should contain a key named 'object' whose value is the id of object to put on its surface, together with a key named 'arm' representing which hand to put.
-- 6: send message, which would never be used.
+- 5: put the object in one hand on some surface, it should contain a key named 'object' whose value is the id of the object to put on its surface, together with a key named 'arm' representing which hand to put.
+- 6: send message, that would never be used.
 - 7: remove obstacle, it should contain another key named 'object' whose value is the id of obstacle to pick, together with a key named 'arm' representing which hand to pick.
 - 8: wait for several frames, it should contain a key named 'delay' indicating the number of frames to wait.
 
 We provide an example in ``agent/example_agent.py``. If you have any other questions, please refer to that example first.
 
-To evaluate your agent on a certain task, you should create a script like the following.
+To evaluate your agent on a certain task, create a script like the following.
 
 ```bash
 bash scripts/test.sh
@@ -158,6 +158,7 @@ This script evaluates the example agent mentioned above in the High Container ta
 ## 🛠️ TODO
 
 - [ ] We found that sometimes the wheelchair agent may block at corners due to its model shape, so temporarily the model of the wheelchair agent is replaced by another model to decrease the variance of results. This bug will be fixed soon.
+- [ ] We will release guidance on how to submit your results soon.
 
 ## 🏆 Results
 
