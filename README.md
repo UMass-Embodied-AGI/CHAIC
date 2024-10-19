@@ -163,6 +163,7 @@ The table below is the quantitative results on CHAIC benchmark. We report the av
         <td colspan="1"> <b>TR(EI)<span>&#8593;</span></b> </td>
         <td colspan="6" align="center">Indoor</td>
         <td colspan="2" align="center">Outdoor</td>
+        <td colspan="1" align="center"></td>
     </tr>
     <tr>
         <td>Helper Agent</td>
@@ -174,6 +175,7 @@ The table below is the quantitative results on CHAIC benchmark. We report the av
         <td>Wheelchair</td>
         <td>Shopping</td>
         <td>Furniture</td>
+        <td>Average</td>
     </tr>
     <tr>
         <td>w/o</td>
@@ -185,6 +187,7 @@ The table below is the quantitative results on CHAIC benchmark. We report the av
         <td>0.07</td>
         <td>0.37</td>
         <td>0.17</td>
+        <td>0.33</td>
     </tr>
     <tr>
         <td>Random</td>
@@ -196,6 +199,7 @@ The table below is the quantitative results on CHAIC benchmark. We report the av
         <td>0.21(0.56)</td>
         <td>0.39(0.05)</td>
         <td>0.48(0.68)</td>
+        <td>0.38(0.16)</td>
     </tr>
     <tr>
         <td>RHP</td>
@@ -207,6 +211,7 @@ The table below is the quantitative results on CHAIC benchmark. We report the av
         <td><b>0.44</b>(0.77)</td>
         <td>0.49(0.22)</td>
         <td>0.65(0.72)</td>
+        <td>0.50(0.32)</td>
     </tr>
     <tr>
         <td>RL</td>
@@ -218,6 +223,7 @@ The table below is the quantitative results on CHAIC benchmark. We report the av
         <td>0.11(0.07)</td>
         <td>0.32(-0.13)</td>
         <td>0.67(0.74)</td>
+        <td>0.35(-0.04)</td>
     </tr>
     <tr>
         <td>SmartHelp</td>
@@ -229,6 +235,7 @@ The table below is the quantitative results on CHAIC benchmark. We report the av
         <td>0.13(0.11)</td>
         <td>0.32(-0.13)</td>
         <td>0.57(0.70)</td>
+        <td>0.35(0.01)</td>
     </tr>
     <tr>
         <td>VLM</td>
@@ -240,6 +247,7 @@ The table below is the quantitative results on CHAIC benchmark. We report the av
         <td>0.40(0.86)</td>
         <td>0.50(0.25)</td>
         <td><b>0.70(0.78)</b></td>
+        <td>0.49(0.28)</td>
     </tr>
     <tr>
         <td>LLM+BM</td>
@@ -251,6 +259,7 @@ The table below is the quantitative results on CHAIC benchmark. We report the av
         <td>0.42(<b>0.89</b>)</td>
         <td><b>0.58(0.33)</b></td>
         <td>0.69(0.77)</td>
+        <td><b>0.53(0.39)</b></td>
     </tr>
     <tr>
         <td>Oracle</td>
@@ -262,6 +271,7 @@ The table below is the quantitative results on CHAIC benchmark. We report the av
         <td>0.60(0.87)</td>
         <td>0.61(0.39)</td>
         <td>0.76(0.80)</td>
+        <td>0.67(0.52)</td>
     </tr>
 </table>
 <table>
@@ -269,6 +279,7 @@ The table below is the quantitative results on CHAIC benchmark. We report the av
         <td colspan="1"> <b>IA<span>&#8593;</span></b> </td>
         <td colspan="6" align="center">Indoor</td>
         <td colspan="1" align="center">Outdoor</td>
+        <td colspan="1" align="center"></td>
     </tr>
     <tr>
         <td>Helper Agent</td>
@@ -279,6 +290,7 @@ The table below is the quantitative results on CHAIC benchmark. We report the av
         <td>Lowthing</td>
         <td>Wheelchair</td>
         <td>Shopping</td>
+        <td>Average</td>
     </tr>
     <tr>
         <td>Random</td>
@@ -289,6 +301,7 @@ The table below is the quantitative results on CHAIC benchmark. We report the av
         <td>0.31</td>
         <td>0.24</td>
         <td>0.34</td>
+        <td>0.26</td>
     </tr>
     <tr>
         <td>RHP</td>
@@ -299,6 +312,7 @@ The table below is the quantitative results on CHAIC benchmark. We report the av
         <td>0.28</td>
         <td>0.17</td>
         <td>0.44</td>
+        <td>0.25</td>
     </tr>
     <tr>
         <td>VLM</td>
@@ -309,6 +323,7 @@ The table below is the quantitative results on CHAIC benchmark. We report the av
         <td><b>0.46</b></td>
         <td>0.35</td>
         <td>0.72</td>
+        <td><b>0.40</b></td>
     </tr>
     <tr>
         <td>LLM+BM</td>
@@ -319,6 +334,7 @@ The table below is the quantitative results on CHAIC benchmark. We report the av
         <td>0.43</td>
         <td><b>0.47</b></td>
         <td><b>0.74</b></td>
+        <td><b>0.40</b></td>
     </tr>
     <tr>
         <td>Oracle</td>
@@ -329,6 +345,7 @@ The table below is the quantitative results on CHAIC benchmark. We report the av
         <td>0.91</td>
         <td>0.82</td>
         <td>0.87</td>
+        <td>0.89</td>
     </tr>
 </table>
 <table>
@@ -336,6 +353,7 @@ The table below is the quantitative results on CHAIC benchmark. We report the av
         <td colspan="1"> <b>CR<span>&#8593;</span></b> </td>
         <td colspan="6" align="center">Indoor</td>
         <td colspan="2" align="center">Outdoor</td>
+        <td colspan="1" align="center"></td>
     </tr>
     <tr>
         <td>Helper Agent</td>
@@ -347,6 +365,7 @@ The table below is the quantitative results on CHAIC benchmark. We report the av
         <td>Wheelchair</td>
         <td>Shopping</td>
         <td>Furniture</td>
+        <td>Average</td>
     </tr>
     <tr>
         <td>Random</td>
@@ -358,6 +377,7 @@ The table below is the quantitative results on CHAIC benchmark. We report the av
         <td>0.09</td>
         <td>0.07</td>
         <td>0.73</td>
+        <td>0.17</td>
     </tr>
     <tr>
         <td>RHP</td>
@@ -369,6 +389,7 @@ The table below is the quantitative results on CHAIC benchmark. We report the av
         <td>0.19</td>
         <td>0.34</td>
         <td>0.74</td>
+        <td>0.36</td>
     </tr>
     <tr>
         <td>VLM</td>
@@ -380,6 +401,7 @@ The table below is the quantitative results on CHAIC benchmark. We report the av
         <td>0.17</td>
         <td>0.34</td>
         <td><b>0.82</b></td>
+        <td>0.31</td>
     </tr>
     <tr>
         <td>LLM+BM</td>
@@ -391,6 +413,7 @@ The table below is the quantitative results on CHAIC benchmark. We report the av
         <td><b>0.45</b></td>
         <td><b>0.46</b></td>
         <td>0.78</td>
+        <td><b>0.41</b></td>
     </tr>
     <tr>
         <td>Oracle</td>
@@ -402,6 +425,7 @@ The table below is the quantitative results on CHAIC benchmark. We report the av
         <td>0.38</td>
         <td>0.45</td>
         <td>0.77</td>
+        <td>0.59</td>
     </tr>
 </table>
 <table>
@@ -409,6 +433,7 @@ The table below is the quantitative results on CHAIC benchmark. We report the av
         <td colspan="1"> <b>STD</b></td>
         <td colspan="6" align="center">Indoor</td>
         <td colspan="2" align="center">Outdoor</td>
+        <td colspan="1" align="center"></td>
     </tr>
     <tr>
         <td>Helper Agent</td>
@@ -420,6 +445,7 @@ The table below is the quantitative results on CHAIC benchmark. We report the av
         <td>Wheelchair</td>
         <td>Shopping</td>
         <td>Furniture</td>
+        <td>Average</td>
     </tr>
     <tr>
         <td>w/o</td>
@@ -431,6 +457,7 @@ The table below is the quantitative results on CHAIC benchmark. We report the av
         <td>0.04</td>
         <td>0.02</td>
         <td>0.04</td>
+        <td>0.03</td>
     </tr>
     <tr>
         <td>Random</td>
@@ -442,6 +469,7 @@ The table below is the quantitative results on CHAIC benchmark. We report the av
         <td>0.04</td>
         <td>0.02</td>
         <td>0.05</td>
+        <td>0.04</td>
     </tr>
     <tr>
         <td>RHP</td>
@@ -453,6 +481,7 @@ The table below is the quantitative results on CHAIC benchmark. We report the av
         <td>0.04</td>
         <td>0.02</td>
         <td>0.04</td>
+        <td>0.03</td>
     </tr>
     <tr>
         <td>VLM</td>
@@ -464,6 +493,7 @@ The table below is the quantitative results on CHAIC benchmark. We report the av
         <td>0.03</td>
         <td>0.03</td>
         <td>0.05</td>
+        <td>0.03</td>
     </tr>
     <tr>
         <td>LLM+BM</td>
@@ -475,6 +505,7 @@ The table below is the quantitative results on CHAIC benchmark. We report the av
         <td>0.05</td>
         <td>0.03</td>
         <td>0.05</td>
+        <td>0.04</td>
     </tr>
     <tr>
         <td>Oracle</td>
@@ -486,6 +517,7 @@ The table below is the quantitative results on CHAIC benchmark. We report the av
         <td>0.03</td>
         <td>0.03</td>
         <td>0.04</td>
+        <td>0.03</td>
     </tr>
 </table>
 <table>
