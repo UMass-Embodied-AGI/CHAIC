@@ -1,4 +1,4 @@
-# Constrained Human-AI Cooperation (CHAIC): An Inclusive Embodied Social Intelligence Challenge (NeurIPS 2024)
+# Constrained Human-AI Cooperation (CHAIC): An Inclusive Embodied Social Intelligence Challenge (NeurIPS D&B Track 2024)
 
 ## ✨ Introduction
 The repo contains code for the following paper:
@@ -7,7 +7,7 @@ The repo contains code for the following paper:
 
 _Authors: Weihua Du*, Qiushi Lyu*, Jiaming Shan, Zhenting Qi, Hongxin Zhang, Sunli Chen, Andi Peng, Tianmin Shu, Kwonjoon Lee, Behzad Dariush, Chuang Gan_
  
-You could view the [[Project Page](https://chaic-neurips.github.io/CHAIC/)] for some video demos.
+You could view the [[Project Page](vis-www.cs.umass.edu/CHAIC/)] for some video demos.
 
 > We introduce Constrained Human-AI Cooperation (CHAIC), an inclusive embodied social intelligence challenge designed to test social perception and cooperation in embodied agents. In CHAIC, the goal is for an embodied agent equipped with egocentric observations to assist a human who may be operating under physical constraints—e.g., unable to reach high places or confined to a wheelchair—in performing common household or outdoor tasks as efficiently as possible. To achieve this, a successful helper must: (1) infer the human's intents and constraints by following the human and observing their behaviors (social perception), and (2) make a cooperative plan tailored to the human user to solve the task as quickly as possible, working together as a team (cooperative planning).
 > 
@@ -98,7 +98,7 @@ By adding ``--gt_mask`` or ``--gt_behavior`` in the scripts, the environment wil
 
 ### Multi-Agent Asynchronized Setting
 
-Agents may take different number of frames to finish (or fail) one action, and one env step is finished until any agent's action is not under the ongoing status, and the current obs is returned to all agents. Then, 
+Agents may take different frames to finish (or fail) one action, and one env step is finished until any agent's action is not under the ongoing status, and the current obs is returned to all agents. Then, 
 all agents are asked for a new action, and any agent having ongoing action will directly switch to the new action if its action changes. 
 
 ### Heterogeneity of Agents
@@ -107,56 +107,57 @@ Different types of agents have different capacity scopes, and agents with differ
 
 ### Realistic Observation
 
-One goal of our benchmark is to mimic real life as similar as possible. Therefore, we only provide the raw RGBD images as the main observation (the benchmark also supports many other types of observation), making our benchmark challenging and having a wide range of application space.
+One goal of CHAIC is to mimic real life as similar as possible. Therefore, we only provide the raw RGB-D images as the main observation (the benchmark also supports many other types of observation), making our benchmark challenging and having a wide range of application space.
 
 ## 🤖 Creating a new agent
 
-First you should learn about the details of the observation. The environment returns each agent's observation every step, which is a dictionary that includes the following items:
+First, you should learn about the details of the observation. The environment returns each agent's observation every step, which is a dictionary that includes the following items:
 
-- **rgb**: RGB image of the current agent's view
+- **RGB**: RGB image of the current agent's view
 - **depth**: depth image of the current agent's view
-- **camera_matrix**: the camera matrix of current agent's ego camera
-- **FOV**: the field of view of current agent's ego camera
-- **agent**: a list of length 6 that contains the position (x, y, z) and forward (fx, fy, fz) of the agent, formatted as [x, y, z, fx, fy, fz]. 
-- **held_objects**: all the objects that current agent is holding. It is a list of length 2 that contains the information of the object that is held in the agent's two hands. Each object's information contains its name, type and a unique id. If it's a container, it also includes the information of the objects in it.
-- **status**: the status of current action, which is a number from 0 to 2. 0 for 'ongoing', 1 for 'failure', 2 for 'success.
+- **camera_matrix**: the camera matrix of the current agent's ego camera
+- **FOV**: the field of view of the current agent's ego camera
+- **agent**: a list of length 6 that contains the current position (x, y, z) and forward (fx, fy, fz) of the agent, formatted as [x, y, z, fx, fy, fz]. 
+- **held_objects**: all the objects that the current agent is holding. It is a list of length 2 that contains the information of the object that is held in the agent's two hands. Each object's information contains its name, type, and a unique id. If it's a container, it also includes the information of the objects in it.
+- **status**: the status of the current action, which is a number from 0 to 2. 0 for 'ongoing', 1 for 'failure', and 2 for 'success'.
 - **current_frames**: the number of frames passed
 - **valid**: whether the last action of the agent is valid
 - **previous_action** & **previous_status**: all previous actions of the agent and their corresponding status
   
-To create a new agent, you must first create a folder named 'agent' in the root directory of the repository, and create a python file in it to write your own agent. You need to implement the following two functions in the python file:
+To create a new agent, you must create a Python file in a folder named 'agent' in the root directory of the repository, and write your own agent in it. You must create a class named 'PlanAgent' and implement the following two functions in the class:
 
 ```python
-def reset(obs, info):
-def act(obs):
+def reset(self, obs, info):
+def act(self, obs):
 ```
 
-The function **reset** is used for initializing the agent at the beginning of the episode. It receives two arguments, that 'obs' is the initial observation of the agent, and 'info' is the information of the task. 
+The function **reset** is used for initializing the agent at the beginning of the episode. It receives two arguments: 'obs' is the initial observation of the agent, and 'info' is the task's information. The information contains the names of all the possible objects, the goal location, rooms, etc. 
 
-The function **act** is the core part of the agent. It determines the next action of the agent. It receives the current observation from the environment, and returns the action. Each action should be a dictionary and set its "type" key to an integer between 0 and 7, each refers to a certain type of action:
+The function **act** is the core part of the agent. It determines the next action of the agent. It receives the current observation from the environment and returns the action. Each action should be a dictionary and set its "type" key to an integer between 0 and 8, each refers to a certain type of action:
 
 - 0: move forward by 0.5 meters
 - 1: turn left by 15 degrees
 - 2: turn right by 15 degrees
-- 3: pick up an object, it should contain another key named 'object' whose value is the id of object to pick, together with a key named 'arm' representing which hand to pick. 0 for left hand, 1 for right hand.
-- 4: put the object in one hand to the container in other hand. 
-- 5: put the object on some surface, it should contain a key named 'object' whose value is the id of object to put on its surface.
-- 6: remove obstacle, it should contain another key named 'object' whose value is the id of obstacle to pick, together with a key named 'arm' representing which hand to pick.
-- 7: wait for several frames, it should contain a key named 'delay' indicating the number of frames to wait.
+- 3: pick up an object, it should contain another key named 'object' whose value is the id of the object to pick, together with a key named 'arm' representing which hand to pick. 'left' for left hand, 'right' for right hand.
+- 4: put the object in one hand to the container in the other hand. 
+- 5: put the object in one hand on some surface, it should contain a key named 'object' whose value is the id of the object to put on its surface, together with a key named 'arm' representing which hand to put.
+- 6: send message, that would never be used.
+- 7: remove obstacle, it should contain another key named 'object' whose value is the id of obstacle to pick, together with a key named 'arm' representing which hand to pick.
+- 8: wait for several frames, it should contain a key named 'delay' indicating the number of frames to wait.
 
-To evaluate your agent on a certain task, you should create a script like the following.
+We provide an example in ``agent/example_agent.py``. If you have any other questions, please refer to that example first.
+
+To evaluate your agent on a certain task, create a script like the following.
 
 ```bash
-bash scripts/plan_helper/test_{your_task}_plan_helper.sh
+bash scripts/test.sh
 ```
 
-You should change the second items of the 'agents' argument, which represents the type of the helper, to the name of the python file of your implemented agent. Then you can just run the script and get the result. You can also change the 'output_dir' of the script to customize the position to save the result.
-
-
+This script evaluates the example agent mentioned above in the High Container task. You should change the second item of the 'agents' argument, which represents the helper's name, to the name of the Python file of your implemented agent. Then you can just run the script and get the result. You can also change the 'output_dir' of the script to customize the position and save the result.
 
 ## 🏆 Results
 
-The table below is the quantitative results on CHAIC benchmark. We report the average Transport Rate (TR), Efficiency Improvement (EI), Goal Inference Accuracy (IA), Completion Ratio of Helper (CR) and Standard Error of Transport Rate (STD_TR) here. w/o means the main agent does the task solely without a helper. The Emergency Rate (ER) metric is also reported for the shopping task. 
+The table below shows the quantitative results of the CHAIC benchmark. We report the average Transport Rate (TR), Efficiency Improvement (EI), Goal Inference Accuracy (IA), Completion Ratio of Helper (CR), and Standard Error of Transport Rate (STD_TR) here. w/o means the main agent does the task solely without a helper. The Emergency Rate (ER) metric is also reported for the shopping task. 
 
 <table>
     <tr>
@@ -550,3 +551,11 @@ The table below is the quantitative results on CHAIC benchmark. We report the av
         <td>0.17</td>
     </tr>
 </table>
+
+## 📝 Submit Your Results
+
+You can submit your helper's results by opening a GitHub Issue, which should include your code and results.
+
+## 🛠️ Known Issues
+
+We found that sometimes the wheelchair agent may block at corners due to its model shape, so another model (a limping person with the same capacity as the wheelchair agent) replaces the original model to decrease the variance of results.

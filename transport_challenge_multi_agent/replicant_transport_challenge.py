@@ -13,6 +13,7 @@ from transport_challenge_multi_agent.reset_arms import ResetArms
 from transport_challenge_multi_agent.globals import Globals
 from tdw.scene_data.scene_bounds import SceneBounds
 from transport_challenge_multi_agent.agent_ability_info import BaseAbility, HelperAbility, GirlAbility
+from typing import List, Dict, Optional, Union
 
 
 class ReplicantTransportChallenge(Replicant):
@@ -93,9 +94,12 @@ class ReplicantTransportChallenge(Replicant):
         :param distance: The distance.
         """
         if self.ability.WHEELCHAIRED:
-            pass
-            #TODO: wheelchair move forward constraint
-        super().move_by(distance=abs(distance), reset_arms=False)
+            super().move_by(distance=abs(distance), 
+                            reset_arms=False, 
+                            animation="limping",
+                            library="humanoid_animations.json")
+        else:
+            super().move_by(distance=abs(distance), reset_arms=False)
 
     def move_backward(self, distance: float = 0.5) -> None:
         """
@@ -106,7 +110,7 @@ class ReplicantTransportChallenge(Replicant):
         print("WARNING: move_backward is not allowed in GYM environment")
         super().move_by(distance=-abs(distance), reset_arms=False)
 
-    def move_to_object(self, target: int, arrived_at: int = 0.7, ability_constraint = True, reset_arms = True, set_max_distance = None) -> None:
+    def move_to_object(self, target: int, arrived_at: int = 0.7, ability_constraint = True, reset_arms = True, set_max_distance = None, wheelchaired = True) -> None:
         """
         Move to an object. This calls `self.move_to(target)`.
 
@@ -118,7 +122,25 @@ class ReplicantTransportChallenge(Replicant):
             max_distance = 100
         if set_max_distance is not None:
             max_distance = set_max_distance
-        self.action = MoveTo(target=target,
+        if self.ability.WHEELCHAIRED:
+            self.action = MoveTo(target=target,
+                             collision_detection=self.collision_detection,
+                             previous=self._previous_action,
+                             reset_arms=reset_arms,
+                             reset_arms_duration=0.25,
+                             scale_reset_arms_duration=True,
+                             arrived_at=arrived_at,
+                             bounds_position="center",
+                             animation="limping",
+                             library="humanoid_animations.json",
+                             collision_avoidance_distance=self._record.collision_avoidance_distance,
+                             collision_avoidance_half_extents=self._record.collision_avoidance_half_extents,
+                             collision_avoidance_y=self._record.collision_avoidance_y,
+                             max_distance=max_distance,
+                             state = self._state,
+                             replicant_name = self._replicant_name)
+        else:
+            self.action = MoveTo(target=target,
                              collision_detection=self.collision_detection,
                              previous=self._previous_action,
                              reset_arms=reset_arms,
@@ -285,3 +307,11 @@ class ReplicantTransportChallenge(Replicant):
                 min_dis = distance
                 room = i
         return room
+    
+    def on_send(self, resp: List[bytes]) -> None:
+        super().on_send(resp)
+        for i in range(len(self.commands)):
+            print(self.commands[i])
+            if "name" in self.commands[i] and self.commands[i]["name"] == 'limping':
+                self.commands[i]["framerate"] = 10
+            # ad-hoc fix for the bug in the library

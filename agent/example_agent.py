@@ -29,24 +29,34 @@ class PlanAgent:
 
     def reset(self, obs, info):
         self.env_api = info['env_api']
+        self.ignore_ids = []
+        # There are some useful tools in env_api, such as:
+        # 'belongs_to_which_room': a function that returns the room name of a given position
+        # 'center_of_room': get the center of a room
+        # 'check_pos_in_room': check if a position is in a room
+        # 'get_room_distance': get the distance from a position to the nearest room
+        # 'get_id_from_mask': get the object info from a mask
+        # 'get_with_character_mask': get the segmentation mask of some objects in a certain character's view
+        # For more details, please refer to transport_challenge_multi_agent/utils.py
+        
 
     def act(self, obs):
-        # useful objects in obs:
+        # useful items in obs:
         # "rgb": RGB image of the current agent's view
         # "depth": depth image of the current agent's view
         # "camera_matrix": the camera matrix of current agent's ego camera
         # "FOV": the field of view of current agent's ego camera
-        # "agent": a list of length 6 that contains the position (x,y,z) and forward (fx,fy,fz) of the agent, formatted as [x, y, z, fx, fy, fz]. 
-        # "held_obejcts": all the objects that current agent is holding. 
+        # "agent": a list of length 6 that contains the current position (x,y,z) and forward (fx,fy,fz) of the agent, formatted as [x, y, z, fx, fy, fz]. 
+        # "held_objects": all the objects that current agent is holding. 
         # It is a list of length 2 that contains the information of the object that is held in the agent's two hands. 
         # Each object's information contains its name, type and a unique id. 
-        # If it's a container, it also includes the information of the objects in it
+        # If it's a container, it also includes the information of the objects in it.
         # "status": the status of current action, which is a number from 0 to 2. 0 for 'ongoing', 1 for 'failure', 2 for 'success'.
         # "current_frames": the number of frames passed
         # "valid": whether the last action of the agent is valid
         # "previous_action" & "previous_status": all previous actions of the agent and their corresponding status
         
-        all_actions = [0, 1, 2, 7]
+        all_actions = [0, 1, 2, 8]
         held_objects = obs["held_objects"]
         visible_objects, seg_mask = self.detect(obs["rgb"])
         has_container = False
@@ -56,7 +66,7 @@ class PlanAgent:
         if held_objects[0]['id'] is None or held_objects[1]['id'] is None:
             flag = False
             for obj in visible_objects:
-                if obj["type"] == 0 or (obj["type"] == 1 and not has_container):
+                if (obj["type"] == 0 or (obj["type"] == 1 and not has_container)) and obj["id"] not in self.ignore_ids:
                     flag = True
                     break
                 
@@ -80,9 +90,9 @@ class PlanAgent:
         action_id = random.choice(all_actions)
         if action_id in [0, 1, 2, 4]:
             return {"type": action_id}
-        elif action_id == 7:
-            delay = random.randint(1, 50)
-            return {"type": 7, "delay": delay}
+        elif action_id == 8:
+            delay = random.randint(1, 10)
+            return {"type": 8, "delay": delay}
         elif action_id == 3:
             if held_objects[0]["id"] is None:
                 arm = "left"
@@ -91,10 +101,11 @@ class PlanAgent:
                 
             can_pick_ids = []
             for obj in visible_objects:
-                if obj["type"] == 0 or (obj["type"] == 1 and not has_container):
+                if (obj["type"] == 0 or (obj["type"] == 1 and not has_container)) and obj["id"] not in self.ignore_ids:
                     can_pick_ids.append(obj["id"])
                     
             pick_id = random.choice(can_pick_ids)
+            self.ignore_ids.append(pick_id)
             return {"type": 3, "arm": arm, "object": pick_id}
         elif action_id == 5:
             if held_objects[0]["id"] is not None:
