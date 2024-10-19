@@ -281,7 +281,7 @@ You can find the results of other metrics [here](docs/results.md).
 
 ## 📝 Submit Your Results
 
-You can submit your helper's results by opening a GitHub Issue, which should include your code and results, a detailed submission guideline will be released soon.
+You can submit your helper's results by opening a GitHub Issue, which should include your code and results. A detailed submission guideline will be released soon.
 
 ## 🛠️ Known Issues
 
