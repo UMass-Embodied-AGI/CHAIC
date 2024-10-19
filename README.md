@@ -155,11 +155,6 @@ bash scripts/test.sh
 
 This script evaluates the example agent mentioned above in the High Container task. You should change the second item of the 'agents' argument, which represents the helper's name, to the name of the Python file of your implemented agent. Then you can just run the script and get the result. You can also change the 'output_dir' of the script to customize the position and save the result.
 
-## 🛠️ TODO
-
-- [ ] We found that sometimes the wheelchair agent may block at corners due to its model shape, so temporarily the model of the wheelchair agent is replaced by another model to decrease the variance of results. This bug will be fixed soon.
-- [ ] We will release guidance on how to submit your results soon.
-
 ## 🏆 Results
 
 The table below shows the quantitative results of the CHAIC benchmark. We report the average Transport Rate (TR), Efficiency Improvement (EI), Goal Inference Accuracy (IA), Completion Ratio of Helper (CR), and Standard Error of Transport Rate (STD_TR) here. w/o means the main agent does the task solely without a helper. The Emergency Rate (ER) metric is also reported for the shopping task. 
@@ -524,3 +519,8 @@ The table below shows the quantitative results of the CHAIC benchmark. We report
         <td>0.17</td>
     </tr>
 </table>
+
+## 🛠️ Current Issues
+
+- [ ] We found that sometimes the wheelchair agent may block at corners due to its model shape, so temporarily the model of the wheelchair agent is replaced by another model to decrease the variance of results.
+- [ ] We will release guidance on how to submit your results soon.
