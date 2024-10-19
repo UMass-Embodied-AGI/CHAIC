@@ -131,7 +131,7 @@ def reset(self, obs, info):
 def act(self, obs):
 ```
 
-The function **reset** is used for initializing the agent at the beginning of the episode. It receives two arguments: 'obs' is the initial observation of the agent, and 'info' is the information of the task. The information contains the names of all the possible objects, the goal location, rooms, etc. 
+The function **reset** is used for initializing the agent at the beginning of the episode. It receives two arguments: 'obs' is the initial observation of the agent, and 'info' is the task's information. The information contains the names of all the possible objects, the goal location, rooms, etc. 
 
 The function **act** is the core part of the agent. It determines the next action of the agent. It receives the current observation from the environment and returns the action. Each action should be a dictionary and set its "type" key to an integer between 0 and 8, each refers to a certain type of action:
 
@@ -520,7 +520,10 @@ The table below shows the quantitative results of the CHAIC benchmark. We report
     </tr>
 </table>
 
-## 🛠️ Current Issues
+## 📝 Submit Your Results
 
-- [ ] We found that sometimes the wheelchair agent may block at corners due to its model shape, so temporarily the model of the wheelchair agent is replaced by another model to decrease the variance of results.
-- [ ] We will release guidance on how to submit your results soon.
+You can submit your helper's results by opening a GitHub Issue, which should include your code and results.
+
+## 🛠️ Known Issues
+
+We found that sometimes the wheelchair agent may block at corners due to its model shape, so another model (a limping person with the same capacity as the wheelchair agent) replaces the original model to decrease the variance of results.
