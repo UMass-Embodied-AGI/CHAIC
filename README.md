@@ -277,11 +277,11 @@ The table below shows the quantitative results of TR and EI, which is the most i
     </tr>
 </table>
 
-You can find other matrics [here](docs/results.md).
+You can find the results of other metrics [here](docs/results.md).
 
 ## 📝 Submit Your Results
 
-You can submit your helper's results by opening a GitHub Issue, which should include your code and results.
+You can submit your helper's results by opening a GitHub Issue, which should include your code and results. A detailed submission guideline will be released soon.
 
 ## 🛠️ Known Issues
 
