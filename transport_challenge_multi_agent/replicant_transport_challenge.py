@@ -311,7 +311,6 @@ class ReplicantTransportChallenge(Replicant):
     def on_send(self, resp: List[bytes]) -> None:
         super().on_send(resp)
         for i in range(len(self.commands)):
-            print(self.commands[i])
             if "name" in self.commands[i] and self.commands[i]["name"] == 'limping':
                 self.commands[i]["framerate"] = 10
             # ad-hoc fix for the bug in the library

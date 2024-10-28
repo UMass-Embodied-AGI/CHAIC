@@ -204,7 +204,7 @@ class TransportChallenge(AssetCachedController):
                 current_obj = commands['name']
             if current_obj is not None and current_obj in self.object_property.keys():
                 if "container" in commands['$type'] and self.object_property[current_obj] != "container":
-                    # remove this commands
+                    # remove this container
                     print(f"Remove {commands} since it is not a container.")
                     continue
             scene_with_filter.append(commands)
@@ -249,19 +249,7 @@ class TransportChallenge(AssetCachedController):
             save_tag = True
         count_and_position["agent"] = {str(i): replicant_positions[i] for i in range(replicants)}
         for i, replicant_position in enumerate(replicant_positions):
-            if self.replicants_ability_name[i] == 'wheelchair':
-                #TODO: make it into use
-                replicant = ReplicantTransportChallenge(replicant_id=i,
-                                                        state=self.state,
-                                                        position=replicant_position,
-                                                        image_frequency=self._image_frequency,
-                                                        target_framerate=self._target_framerate,
-                                                        enable_collision_detection=self.enable_collision_detection,
-                                                        name=self.replicants_name[i],
-                                                        ability=self.replicants_ability[i]
-                                                        )
-            else:
-                replicant = ReplicantTransportChallenge(replicant_id=i,
+            replicant = ReplicantTransportChallenge(replicant_id=i,
                                                         state=self.state,
                                                         position=replicant_position,
                                                         image_frequency=self._image_frequency,
