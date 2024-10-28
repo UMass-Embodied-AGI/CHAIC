@@ -1,7 +1,6 @@
 import argparse
 import os
 import json
-import gym
 import time
 import pickle
 import logging
@@ -32,18 +31,6 @@ from plan_agent_for_furniture_agent import PlanAgentForFurnitureAgent
 from child_agent import ChildAgent
 from red_light_agent import RedLightAgent
 from follow_agent import FollowAgent
-# from lm_agent import lm_agent
-# from lm_helper_agent import lm_helper_agent
-# from random_agent import random_agent
-import transport_challenge_multi_agent.utils as utils
-# try:
-#     gym.envs.registration.unregister('transport_challenge_MA')
-# except:
-#     pass  # Environment was not registered
-gym.envs.registration.register(
-    id='transport_challenge_MA',
-    entry_point='tdw-gym.tdw_gym:TDW'
-)
 
 class Challenge:
     def __init__(self, logger, port, data_path, output_dir, number_of_agents = 2, max_frames = 3000, screen_size = 256, data_prefix = 'dataset/nips_dataset/', gt_mask = False, gt_behavior = False, no_save_img = False, smart_help = False, behaviour_data_gen = False, only_save_rgb = False, seed_num = 0, oracle = False):
