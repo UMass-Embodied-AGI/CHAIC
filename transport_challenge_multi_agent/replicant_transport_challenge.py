@@ -110,7 +110,7 @@ class ReplicantTransportChallenge(Replicant):
         print("WARNING: move_backward is not allowed in GYM environment")
         super().move_by(distance=-abs(distance), reset_arms=False)
 
-    def move_to_object(self, target: int, arrived_at: int = 0.7, ability_constraint = True, reset_arms = True, set_max_distance = None, wheelchaired = True) -> None:
+    def move_to_object(self, target: int, arrived_at: int = 0.7, ability_constraint = True, reset_arms = True, set_max_distance = None) -> None:
         """
         Move to an object. This calls `self.move_to(target)`.
 

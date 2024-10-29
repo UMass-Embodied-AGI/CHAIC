@@ -15,26 +15,26 @@ class ChallengeState(AddOn):
         """
 
         super().__init__()
+        self.replicants: Dict[int, Dict[Arm, Optional[int]]] = dict()
         """:field
         A dictionary of Replicant data. Key = The ID of the Replicant. Value = A dictionary. Key = [`Arm`](https://github.com/threedworld-mit/tdw/blob/master/Documentation/python/replicant/arm.md). Value = Object ID or None. Example: Replicant 0 is holding object 1 in its right hand. This dictionary will be: `{0: {Arm.left: None, Arm.right: 1}}` 
         """
-        self.replicants: Dict[int, Dict[Arm, Optional[int]]] = dict()
+        self.container_ids: List[int] = list()
         """:field
         A list of the ID of each container in the scene.
         """
-        self.container_ids: List[int] = list()
+        self.target_object_ids: List[int] = list()
         """:field
         A list of the ID of each target object in the scene.
         """
-        self.target_object_ids: List[int] = list()
         self.possible_target_object_ids: List[int] = list()
         self.obstacle_ids: List[int] = list()
         self.vase_ids: List[int] = list()
         self.object_drop_frame: Dict[int, List[float]] = dict()
+        self.containment: Dict[int, List[int]] = dict()
         """:field
         A dictionary describing the current containment status of each container in the scene. Key = The object ID of a container. Value = A list of IDs of objects inside the container.
         """
-        self.containment: Dict[int, List[int]] = dict()
         self.__initialized: bool = False
 
     def is_holding_container(self, replicant_id: int) -> bool:

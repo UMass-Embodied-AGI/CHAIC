@@ -144,7 +144,8 @@ class TransportChallenge(AssetCachedController):
         # self.HUMANOID_LIBRARIANS[Replicant.LIBRARY_NAME] = HumanoidLibrarian("humanoids.json")
     def start_floorplan_trial(self, scene: str, layout: int, task_meta = None,
                               replicants: Union[int, List[Union[int, np.ndarray, Dict[str, float]]]] = 2,
-                              lighting: bool = True, random_seed: int = None, data_prefix = 'dataset/dataset_train', object_property: dict = dict()) -> None:
+                              lighting: bool = True, random_seed: int = None, data_prefix = 'dataset/dataset_train', object_property: dict = dict(),
+                              replicant_init_position = None, replicant_init_rotation = None) -> None:
         """
         Start a trial in a floorplan scene.
 
@@ -172,7 +173,7 @@ class TransportChallenge(AssetCachedController):
         self.layout = layout
         self.data_prefix = data_prefix
         self.object_property = object_property
-        self._start_trial(replicants=replicants, task_meta = task_meta, random_seed=random_seed)
+        self._start_trial(replicants=replicants, task_meta = task_meta, random_seed=random_seed, replicant_init_position = replicant_init_position, replicant_init_rotation = replicant_init_rotation)
 
     def communicate(self, commands: Union[dict, List[dict]]) -> list:
         """
@@ -185,10 +186,10 @@ class TransportChallenge(AssetCachedController):
         #print(commands)
         return super().communicate(commands)
 
-    def _start_trial(self, replicants: Union[int, List[Union[int, np.ndarray, Dict[str, float]]]] = 2, task_meta = None, random_seed: int = None) -> None:
+    def _start_trial(self, replicants: Union[int, List[Union[int, np.ndarray, Dict[str, float]]]] = 2, task_meta = None, random_seed: int = None,
+                     replicant_init_position = None, replicant_init_rotation = None) -> None:
         """
         Start a trial in a floorplan scene.
-        food or stuff
         """
         self.communicate({"$type": "set_floorplan_roof", "show": False})
         load_path = os.path.join(self.data_prefix, f"{self.scene}_{self.layout}.json")
@@ -220,6 +221,7 @@ class TransportChallenge(AssetCachedController):
         # Get the rooms.
         rooms: Dict[int, List[Dict[str, float]]] = self._get_rooms_map(communicate=True)
         replicant_positions: List[Dict[str, float]] = list()
+        replicant_rotations: None = None
 
         # Spawn a certain number of Replicants in a certain rooms with random position
         if isinstance(replicants, int):
@@ -247,11 +249,22 @@ class TransportChallenge(AssetCachedController):
                     save_tag = True
         else:
             save_tag = True
+
+        # If we seed specific position, we will use it.
+        if replicant_init_position is not None:
+            replicant_positions = replicant_init_position
+            save_tag = False
+        
+        if replicant_init_rotation is not None:
+            replicant_rotations = replicant_init_rotation
+            save_tag = False
+
         count_and_position["agent"] = {str(i): replicant_positions[i] for i in range(replicants)}
-        for i, replicant_position in enumerate(replicant_positions):
+        for i in range(len(replicant_positions)):
             replicant = ReplicantTransportChallenge(replicant_id=i,
                                                         state=self.state,
-                                                        position=replicant_position,
+                                                        position=replicant_positions[i],
+                                                        rotation=replicant_rotations[i] if replicant_rotations is not None else None,
                                                         image_frequency=self._image_frequency,
                                                         target_framerate=self._target_framerate,
                                                         enable_collision_detection=self.enable_collision_detection,

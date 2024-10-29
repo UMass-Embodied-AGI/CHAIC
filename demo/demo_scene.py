@@ -26,6 +26,11 @@ commands = [TDWUtils.create_empty_room(12, 12),
              "height": 512}]
 object_ids = [Controller.get_unique_id(), Controller.get_unique_id(), Controller.get_unique_id(), Controller.get_unique_id()]
 
+replicant = ReplicantTransportChallenge(replicant_id=0,
+                                            state=state,
+                                            position={"x": 2, "y": 0, "z": 2},
+                                            enable_collision_detection=False,
+                                            image_frequency=ImageFrequency.always)
 commands.extend(Controller.get_add_physics_object(model_name="b04_orange_00",
                                                   position={"x": -1, "y": 0.15, "z": -0.5},
                                                   rotation={"x": 0,
@@ -81,11 +86,6 @@ commands.extend(Controller.get_add_physics_object(model_name="teatray",
                                                   object_id=container_id,
                                                   kinematic=False))
 state.container_ids.append(container_id)
-replicant = ReplicantTransportChallenge(replicant_id=0,
-                                            state=state,
-                                            position={"x": 2, "y": 0, "z": 2},
-                                            enable_collision_detection=False,
-                                            image_frequency=ImageFrequency.always)
 for x in object_ids:
     replicant.collision_detection.exclude_objects.append(x)
 for x in state.container_ids:
