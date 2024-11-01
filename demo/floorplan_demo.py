@@ -17,6 +17,7 @@ import transport_challenge_multi_agent.utils as utils
 import os
 import numpy as np
 from tdw.output_data import OutputData, Transforms
+import shutil
 
 import time
 print("start", time.time())
@@ -24,7 +25,7 @@ controller = TransportChallenge(port=1077, check_version=True, launch_build=True
                             screen_width=1024, screen_height=1024, \
                             image_frequency= ImageFrequency.always, png=True, image_passes=None, \
                             enable_collision_detection = False, \
-                            logger_dir = "demo/floorplan", replicants_name=['girl_casual'], replicants_ability = ['girl'])
+                            logger_dir = "demo/floorplan", replicants_name=['girl_casual', "man_casual"], replicants_ability = ['girl', 'helper'])
 
 scene_info = {
     "scene": "2a",
@@ -47,11 +48,10 @@ scene_info = {
 # increase x: right
 # increase z: up
 # 90 degree: turn right
-controller.start_floorplan_trial(scene=scene_info['scene'], layout=scene_info['layout'], replicants= 1,
+controller.start_floorplan_trial(scene=scene_info['scene'], layout=scene_info['layout'], replicants= 2,
                                   random_seed=scene_info['seed'], task_meta = scene_info['task_meta'], 
                                   data_prefix = scene_info['data_prefix'], object_property = scene_info['object_property'],
-                                  replicant_init_position = [{"x": 4.5, "y": 0, "z": -2}], replicant_init_rotation = [{"x": 0, "y": 60, "z": 0}])
-
+                                  replicant_init_position = [{"x": 4.5, "y": 0, "z": -2}, {"x": 6, "y": 0, "z": 4}], replicant_init_rotation = [{"x": 0, "y": 60, "z": 0}, {"x": 0, "y": 0, "z": 0}])
 
 object_id = 123456789
 data = controller.communicate(Controller.get_add_physics_object(model_name="b04_orange_00",
@@ -67,12 +67,12 @@ data = controller.communicate(Controller.get_add_physics_object(model_name="b04_
 
 camera = ThirdPersonCamera(position={
             "x": 5,
-            "y": 8,
-            "z": -7
+            "y": 6,
+            "z": -5.5
         }, avatar_id="demo", look_at={
             "x": 5,
             "y": -8,
-            "z": 11
+            "z": 6
         })
 controller.add_ons.extend([camera])
 
@@ -97,7 +97,9 @@ action_buffer.append({'type': 'reach_for', 'object': object_id})
 action_buffer.append({'type': 'pick_up', 'arm': Arm.left, 'object': object_id})
 
 save_dir = "demo/floorplan"
-os.makedirs(save_dir, exist_ok=True)
+if os.path.exists(save_dir):
+    shutil.rmtree(save_dir)
+os.makedirs(save_dir)
 num_frames = 0
 finish = False
 
