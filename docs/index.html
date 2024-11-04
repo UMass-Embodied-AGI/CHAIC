@@ -484,7 +484,7 @@ video {
                 <a href="https://www.tshu.io/"> Tianmin Shu<sup>7</sup></a>,
                 <a href="https://scholar.google.com/citations?user=C6Wu8M0AAAAJ"> Kwonjoon Lee<sup>8</sup></a>,
                 <a href="https://scholar.google.com/citations?user=FgxRWPcAAAAJ&hl=en"> Behzad Dariush<sup>8</sup></a>, 
-                <a href="https://people.csail.mit.edu/ganchuang/"> Chuang Gan<sup>5,9</sup></a>
+                <a href="https://people.csail.mit.edu/ganchuang/"> Chuang Gan<sup>5</sup></a>
             </div>
         </center>
         <center>
@@ -496,8 +496,7 @@ video {
             <sup>5</sup> University of Massachusetts Amherst,
             <sup>6</sup> MIT,
             <sup>7</sup> Johns Hopkins University,
-            <sup>8</sup> Honda Research Institute USA, <br>
-            <sup>9</sup> MIT-IBM Watson AI Lab
+            <sup>8</sup> Honda Research Institute USA
         </div>
 
         <div class="affil-row">
@@ -520,19 +519,13 @@ video {
         </div>
     </div>
 
-    <section id="teaser-image">
+    <section id="teaser-video">
         <hr>
         <center>
-            <!-- <figure>
-                <video class="centered" width="80%" autoplay loop muted playsinline class="video-background " >
-                    <source src="materials/teaser.m4v" type="video/mp4">
-                    Your browser does not support the video tag.
-                </video>
-            </figure> -->
             <figure>
-                <a>
-                    <img width="95%" src="figure/teaser_v4.png"> 
-                </a>
+                <video class="centered" width="100%" autoplay muted controls class="video-background">
+                    <source src="video/teaser_video.mp4" type="video/mp4">
+                </video>
             </figure>
         </center>
     </section>
@@ -546,18 +539,23 @@ video {
                 <br>
                 To benchmark this challenge, we create <b>four new agents</b> with real physical constraints and <b>eight long-horizon tasks</b> featuring both indoor and outdoor scenes with various constraints, emergency events, and potential risks. We benchmark planning- and learning-based baselines on the challenge and introduce a new method that leverages Large Language Models and behavior modeling. Empirical evaluations demonstrate the effectiveness of our benchmark in enabling systematic assessment of key aspects of machine social intelligence.
             </p>
+    </section>
+
+    <section id="teaser-image">
+        <center>
+            <figure>
+                <a>
+                    <img width="95%" src="figure/teaser_v4.png"> 
+                </a>
+            </figure>
+        </center>
         </div>
+        <hr>
     </section>
 
     <section id="Dataset Description">
         <h2 style="text-align: center;">Dataset Description</h2>
         <center>
-            <!-- <figure>
-                <video class="centered" width="80%" autoplay loop muted playsinline class="video-background " >
-                    <source src="materials/teaser.m4v" type="video/mp4">
-                    Your browser does not support the video tag.
-                </video>
-            </figure> -->
             <figure>
                 <a>
                     <img width="95%" src="figure/task_overview_v7.png"> 
@@ -745,12 +743,6 @@ video {
         <hr>
         <h2 style="text-align: center;">LLM+BM Helper Baseline</h2>
         <center>
-            <!-- <figure>
-                <video class="centered" width="80%" autoplay loop muted playsinline class="video-background " >
-                    <source src="materials/teaser.m4v" type="video/mp4">
-                    Your browser does not support the video tag.
-                </video>
-            </figure> -->
             <figure>
                 <a>
                     <img width="95%" src="figure/model.png"> 
@@ -766,16 +758,20 @@ video {
     <div class="flex-row">
         <p>
         We test six types of helpers: <b>Random Helper</b>, <b>Rule-based Hierarchical Plan Helper (RHP)</b>, <b>LLM+BM Helper</b>, <b>VLM Helper</b>, <b>RL Helper</b> and <b>SmartHelp Helper</b>. LLM+BM Helper achieves the best performance in our benchmark. Figure 2 is an overview of the LLM+BM Helper, which is equipped with specific modules for <em>Perception</em>, <em>Behavior Modeling</em>, <em>Decision</em>, and <em>Execution</em>. (1) The <b>perception module</b> detects objects from raw RGB images; (2) the <b>memory module</b> builds the semantic map of the environment and records behaviors; (3) the <b>behavior modeling module</b> recognizes the action of the partner and localizes the object corresponding to the action; (4) the <b>decision module</b> decides plans for the next steps using foundation models; and (5) the <b>execution module</b> generates low-level actions.
-        <hr>
-        <hr>
+        <p>
+        The following video is a demonstration of the LLM+BM Helper's mechanism:
+        <center>
+            <video class="centered" width="100%" muted controls class="video-background">
+                <source src="video/pipeline.mp4" type="video/mp4">
+            </video>
+        </center>
+        <p>
+    </div>
+    <section id="Qualitative Example"/>
+    <h3 style="text-align: center;">Qualitative Example</h3>
+    <div class="flex-row">
         Combining the wide knowledge from foundation models and precise perception from fine-tuned detection models, the LLM+BM Helper can infer the constrained agent's goal and constraints accurately and efficiently. Here is an exmaple of the LLM+BM Helper's behavior:
         <center>
-            <!-- <figure>
-                <video class="centered" width="80%" autoplay loop muted playsinline class="video-background " >
-                    <source src="materials/teaser.m4v" type="video/mp4">
-                    Your browser does not support the video tag.
-                </video>
-            </figure> -->
             <figure>
                 <a>
                     <img width="100%" src="figure/LLM+BM_example.png"> 
