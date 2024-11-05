@@ -1,4 +1,4 @@
-# Constrained Human-AI Cooperation (CHAIC): An Inclusive Embodied Social Intelligence Challenge (NeurIPS D&B Track 2024)
+# Constrained Human-AI Cooperation (CHAIC): An Inclusive Embodied Social Intelligence Challenge
 
 <p align="center">
     <a href='https://arxiv.org/abs/2411.01796'>
@@ -12,7 +12,7 @@
 ## ✨ Introduction
 The repo contains code for the following paper:
 
-**Constrained Human-AI Cooperation: An Inclusive Embodied Social Intelligence Challenge**
+**Constrained Human-AI Cooperation: An Inclusive Embodied Social Intelligence Challenge (NeurIPS D&B Track 2024)**
 
 _Authors: Weihua Du*, Qiushi Lyu*, Jiaming Shan, Zhenting Qi, Hongxin Zhang, Sunli Chen, Andi Peng, Tianmin Shu, Kwonjoon Lee, Behzad Dariush, Chuang Gan_
  
