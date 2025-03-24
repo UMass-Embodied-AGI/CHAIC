@@ -1,1 +1,0 @@
-gdown https://drive.google.com/uc?id=15XUX3pWg9ZMC8ErxUH29CP5nJ89MF9zP -O smart_help_baseline/
