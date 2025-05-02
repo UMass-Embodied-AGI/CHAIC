@@ -4,7 +4,7 @@
     <a href='https://arxiv.org/abs/2411.01796'>
       <img src='https://img.shields.io/badge/Paper-PDF-red?style=flat&logo=arXiv&logoColor=red' alt='Paper PDF'>
     </a>
-    <a href='umass-embodied-agi.github.io/CHAIC/' style='padding-left: 0.5rem;'>
+    <a href='https://umass-embodied-agi.github.io/CHAIC/' style='padding-left: 0.5rem;'>
       <img src='https://img.shields.io/badge/Project-Page-blue?style=flat&logo=Google%20chrome&logoColor=blue' alt='Project Page'>
     </a>
 </p>
