@@ -16,7 +16,7 @@ The repo contains code for the following paper:
 
 _Authors: Weihua Du*, Qiushi Lyu*, Jiaming Shan, Zhenting Qi, Hongxin Zhang, Sunli Chen, Andi Peng, Tianmin Shu, Kwonjoon Lee, Behzad Dariush, Chuang Gan_
  
-You could view the [[Project Page](umass-embodied-agi.github.io/CHAIC/)] for some video demos.
+You could view the [[Project Page](https://umass-embodied-agi.github.io/CHAIC/)] for some video demos.
 
 > We introduce Constrained Human-AI Cooperation (CHAIC), an inclusive embodied social intelligence challenge designed to test social perception and cooperation in embodied agents. In CHAIC, the goal is for an embodied agent equipped with egocentric observations to assist a human who may be operating under physical constraints—e.g., unable to reach high places or confined to a wheelchair—in performing common household or outdoor tasks as efficiently as possible. To achieve this, a successful helper must: (1) infer the human's intents and constraints by following the human and observing their behaviors (social perception), and (2) make a cooperative plan tailored to the human user to solve the task as quickly as possible, working together as a team (cooperative planning).
 > 
@@ -294,4 +294,4 @@ You can submit your helper's results by opening a GitHub Issue, which should inc
 
 ## 🛠️ Known Issues
 
-We found that sometimes the wheelchair agent may block at corners due to its model shape, so another model (a limping person with the same capacity as the wheelchair agent) replaces the original model to decrease the variance of results.
+We found that sometimes the wheelchair agent may be blocked at corners due to its model shape, so another model (a limping person with the same capacity as the wheelchair agent) replaces the original model to decrease the variance of results.
